@@ -1,0 +1,466 @@
+{
+  "categories": {
+    "coding": "编程助手",
+    "chat": "对话平台",
+    "framework": "框架库",
+    "data": "数据工具",
+    "drawing": "绘画创意",
+    "video": "视频生成",
+    "audio": "语音音频",
+    "deploy": "平台部署",
+    "regional": "国产AI",
+    "security": "安全审计",
+    "automation": "自动化"
+  },
+  "tools": {
+    "OpenCode": {
+      "display": "OpenCode 终端编程",
+      "description": "终端 AI 编程助手，支持多种模型",
+      "mode_0_name": "终端模式",
+      "mode_0_desc": "新窗口运行终端版",
+      "mode_1_name": "网页端",
+      "mode_1_desc": "启动网页服务端",
+      "tag": "✅ 国内直连"
+    },
+    "OpenClaw": {
+      "display": "小龙虾 OpenClaw",
+      "description": "小龙虾 - 通用 AI 编程助手，终端对话写代码",
+      "mode_0_name": "聊天模式",
+      "mode_0_desc": "启动对话",
+      "mode_1_name": "网页端",
+      "mode_1_desc": "启动网页服务端",
+      "tag": "✅ 国内直连"
+    },
+    "ClaudeCode": {
+      "display": "Claude Code 编程助手",
+      "description": "Anthropic 官方编程智能体，AI 写代码改代码",
+      "tag": "🔄 镜像安装"
+    },
+    "Codex": {
+      "display": "Codex CLI",
+      "description": "OpenAI 官方编程智能体，终端 AI 编程",
+      "tag": "🔄 镜像安装"
+    },
+    "Aider": {
+      "display": "Aider 结对编程",
+      "description": "终端 AI 结对编程工具",
+      "tag": "✅ 国内直连"
+    },
+    "OpenInterpreter": {
+      "display": "Open Interpreter 开源代理",
+      "description": "自然语言操控电脑的开源编程代理",
+      "tag": "✅ 国内直连"
+    },
+    "GeminiCLI": {
+      "display": "Gemini CLI 助手",
+      "description": "Google Gemini 官方终端 CLI 工具",
+      "tag": "🔄 镜像安装"
+    },
+    "Cline": {
+      "display": "Cline 自主开发",
+      "description": "终端 AI 编程代理，自主完成开发任务",
+      "tag": "🔄 镜像安装"
+    },
+    "CursorCLI": {
+      "display": "Cursor 终端 CLI",
+      "description": "Cursor 编辑器的终端 AI 编程接口",
+      "tag": "🔄 镜像安装"
+    },
+    "Goose": {
+      "display": "Goose 开源代理",
+      "description": "Block 公司开源的 AI 编程代理",
+      "tag": "✅ 国内直连"
+    },
+    "MistralVibe": {
+      "display": "Mistral Vibe 编程",
+      "description": "Mistral AI 终端编程代理",
+      "tag": "🔄 镜像安装"
+    },
+    "QwenCode": {
+      "display": "通义千问 Qwen Code",
+      "description": "阿里通义千问官方编程助手 CLI",
+      "tag": "✅ 国内直连"
+    },
+    "Continue": {
+      "display": "Continue IDE助手",
+      "description": "开源 AI 编程助手，支持 VS Code / JetBrains",
+      "tag": "🔄 镜像安装"
+    },
+    "Tabby": {
+      "display": "Tabby 自托管补全",
+      "description": "自托管 AI 编程助手，代码补全和聊天",
+      "tag": "🔄 镜像安装"
+    },
+    "Ollama": {
+      "display": "本地大模型 Ollama",
+      "description": "本地运行大语言模型，隐私安全，无需联网",
+      "mode_0_name": "服务端",
+      "mode_0_desc": "启动 Ollama 服务",
+      "mode_1_name": "运行模型",
+      "mode_1_desc": "运行 llama3.3 模型",
+      "tag": "✅ 国内直连"
+    },
+    "Hermes": {
+      "display": "Hermes 通用代理",
+      "description": "通用 AI 代理框架，终端对话和任务执行",
+      "tag": "✅ 国内直连"
+    },
+    "Dify": {
+      "display": "Dify 可视化构建",
+      "description": "可视化搭建 AI 应用，拖拽编排工作流",
+      "mode_0_name": "启动服务",
+      "mode_0_desc": "启动 Dify 服务",
+      "mode_1_name": "停止服务",
+      "mode_1_desc": "停止 Dify 服务",
+      "tag": "🔄 镜像安装 🐳 需Docker"
+    },
+    "OpenWebUI": {
+      "display": "OpenWebUI 本地对话",
+      "description": "本地大模型聊天界面，兼容 Ollama",
+      "tag": "🔄 镜像安装 🐳 需Docker"
+    },
+    "LobeChat": {
+      "display": "LobeChat",
+      "description": "现代化 AI 聊天平台，支持多模型",
+      "tag": "🔄 镜像安装 🐳 需Docker"
+    },
+    "NextChat": {
+      "display": "NextChat 自托管对话",
+      "description": "ChatGPT Next Web 自托管聊天界面",
+      "tag": "🔄 镜像安装 🐳 需Docker"
+    },
+    "LangChain": {
+      "display": "开发框架 LangChain",
+      "description": "最流行的 LLM 应用开发框架",
+      "tag": "✅ 国内直连"
+    },
+    "CrewAI": {
+      "display": "多智能体协作 CrewAI",
+      "description": "多 AI 智能体协作框架",
+      "tag": "✅ 国内直连"
+    },
+    "AutoGen": {
+      "display": "多智能体 AutoGen",
+      "description": "微软多智能体对话框架",
+      "tag": "✅ 国内直连"
+    },
+    "AG2": {
+      "display": "AG2 多智能体框架",
+      "description": "多智能体对话框架（原 AutoGen 分支）",
+      "tag": "✅ 国内直连"
+    },
+    "LlamaIndex": {
+      "display": "数据框架 LlamaIndex",
+      "description": "连接 LLM 与外部数据的框架",
+      "tag": "✅ 国内直连"
+    },
+    "Haystack": {
+      "display": "企业搜索 Haystack",
+      "description": "企业级搜索与 RAG 框架",
+      "tag": "✅ 国内直连"
+    },
+    "Phidata": {
+      "display": "Phidata 智能体框架",
+      "description": "AI 代理构建框架，支持多工具集成",
+      "tag": "✅ 国内直连"
+    },
+    "OpenAIAgentsSDK": {
+      "display": "OpenAI Agents 编程SDK",
+      "description": "OpenAI 官方 AI 代理开发套件",
+      "tag": "✅ 国内直连"
+    },
+    "LangGraph": {
+      "display": "智能体编排",
+      "description": "LangChain 推出的智能体编排框架",
+      "tag": "✅ 国内直连"
+    },
+    "MetaGPT": {
+      "display": "多角色框架",
+      "description": "多角色 AI 软件开发框架",
+      "tag": "✅ 国内直连"
+    },
+    "Mastra": {
+      "display": "Mastra AI 框架",
+      "description": "TypeScript AI 应用开发框架",
+      "tag": "✅ 国内直连"
+    },
+    "SemanticKernel": {
+      "display": "Semantic Kernel 编程SDK",
+      "description": "微软 AI 编排 SDK，支持多语言",
+      "tag": "✅ 国内直连"
+    },
+    "Gradio": {
+      "display": "演示框架",
+      "description": "快速构建 ML 应用演示界面的 Python 库",
+      "tag": "✅ 国内直连"
+    },
+    "DSPy": {
+      "display": "提示编程框架",
+      "description": "用编程替代提示词的 LLM 框架",
+      "tag": "✅ 国内直连"
+    },
+    "ChromaDB": {
+      "display": "向量数据库 ChromaDB",
+      "description": "轻量向量数据库，用于 RAG 知识库检索",
+      "tag": "✅ 国内直连"
+    },
+    "Mem0": {
+      "display": "记忆存储 Mem0",
+      "description": "AI 智能记忆层，持久化对话记忆",
+      "tag": "✅ 国内直连"
+    },
+    "Qdrant": {
+      "display": "向量数据库 Qdrant",
+      "description": "高性能向量搜索引擎",
+      "tag": "✅ 国内直连"
+    },
+    "Weaviate": {
+      "display": "向量数据库 Weaviate",
+      "description": "云原生向量数据库，支持混合搜索",
+      "tag": "✅ 国内直连"
+    },
+    "MilvusLite": {
+      "display": "向量数据库 Milvus Lite",
+      "description": "轻量版 Milvus 向量数据库，嵌入式中可用",
+      "tag": "✅ 国内直连"
+    },
+    "Unstructured": {
+      "display": "文档解析 Unstructured",
+      "description": "非结构化文档解析，支持 PDF/HTML/DOCX",
+      "tag": "✅ 国内直连"
+    },
+    "NeMoGuardrails": {
+      "display": "NeMo Guardrails",
+      "description": "NVIDIA 开源 AI 安全护栏工具包",
+      "tag": "✅ 国内直连"
+    },
+    "Guardrails": {
+      "display": "护栏 Guardrails",
+      "description": "AI 输出安全护栏，结构化验证",
+      "tag": "✅ 国内直连"
+    },
+    "txtai": {
+      "display": "语义搜索平台",
+      "description": "AI 驱动的语义搜索和数据提取平台",
+      "tag": "✅ 国内直连"
+    },
+    "LanceDB": {
+      "display": "LanceDB 向量数据库",
+      "description": "基于列存格式 Lance 的嵌入式向量数据库",
+      "tag": "✅ 国内直连"
+    },
+    "Docling": {
+      "display": "Docling 文档理解",
+      "description": "IBM 开源的文档理解和转换工具",
+      "tag": "✅ 国内直连"
+    },
+    "ComfyUI": {
+      "display": "绘画 ComfyUI",
+      "description": "Stable Diffusion 工作流界面",
+      "mode_0_name": "启动",
+      "mode_0_desc": "启动 ComfyUI 服务",
+      "mode_1_name": "启动（低显存）| Low VRAM",
+      "mode_1_desc": "低显存模式启动",
+      "tag": "🔄 镜像安装 🎮 需GPU"
+    },
+    "SDWebUI": {
+      "display": "Diffusion WebUI",
+      "description": "最流行的 Stable Diffusion 界面",
+      "mode_0_name": "启动",
+      "mode_0_desc": "启动 SD WebUI",
+      "mode_1_name": "共享模式",
+      "mode_1_desc": "启动并生成公链",
+      "tag": "🔄 镜像安装 🎮 需GPU"
+    },
+    "InvokeAI": {
+      "display": "InvokeAI 绘画平台",
+      "description": "专业级 AI 绘画创作平台",
+      "tag": "🔄 镜像安装 🎮 需GPU"
+    },
+    "Fooocus": {
+      "display": "Fooocus 一键绘画",
+      "description": "极简 AI 绘画工具，一键生成高质量图片",
+      "tag": "✅ 国内直连 🎮 需GPU"
+    },
+    "AnimateDiff": {
+      "display": "AnimateDiff 动画生成",
+      "description": "文生视频动画工具，基于 Stable Diffusion",
+      "tag": "✅ 国内直连 🎮 需GPU"
+    },
+    "Wan2.1": {
+      "display": "视频生成",
+      "description": "阿里万相视频生成模型",
+      "tag": "✅ 国内直连 🎮 需GPU"
+    },
+    "CogVideoX": {
+      "display": "视频生成",
+      "description": "智谱 CogVideoX 开源视频生成模型",
+      "tag": "✅ 国内直连 🎮 需GPU"
+    },
+    "OpenSora": {
+      "display": "视频生成",
+      "description": "开源文生视频模型，类 Sora 架构",
+      "tag": "✅ 国内直连 🎮 需GPU"
+    },
+    "HunyuanVideo": {
+      "display": "混元视频生成",
+      "description": "腾讯混元视频生成大模型",
+      "tag": "✅ 国内直连 🎮 需GPU"
+    },
+    "StepVideo": {
+      "display": "视频生成",
+      "description": "阶跃星辰 Step-Video 开源视频模型",
+      "tag": "✅ 国内直连 🎮 需GPU"
+    },
+    "Whisper": {
+      "display": "语音转文字 Whisper",
+      "description": "OpenAI 开源语音识别模型",
+      "tag": "✅ 国内直连"
+    },
+    "FunASR": {
+      "display": "阿里语音识别 FunASR",
+      "description": "阿里达摩院开源语音识别工具包",
+      "tag": "✅ 国内直连"
+    },
+    "CoquiTTS": {
+      "display": "TTS 语音合成",
+      "description": "开源神经网络语音合成引擎",
+      "tag": "✅ 国内直连"
+    },
+    "Bark": {
+      "display": "Bark 语音生成",
+      "description": "Suno 开源文本转语音模型",
+      "tag": "🔄 镜像安装 🎮 需GPU"
+    },
+    "CosyVoice": {
+      "display": "语音克隆",
+      "description": "阿里通义语音克隆和合成模型",
+      "tag": "✅ 国内直连 🎮 需GPU"
+    },
+    "MusicGen": {
+      "display": "音乐生成",
+      "description": "Meta 开源 AI 音乐生成模型",
+      "tag": "✅ 国内直连 🎮 需GPU"
+    },
+    "RVC": {
+      "display": "变声器",
+      "description": "实时语音转换变声器",
+      "tag": "🔄 镜像安装 🎮 需GPU"
+    },
+    "WhisperX": {
+      "display": "加速识别",
+      "description": "Whisper 加速版，支持说话人分离和词级时间戳",
+      "tag": "🔄 镜像安装 🎮 需GPU"
+    },
+    "LangFlow": {
+      "display": "工作流平台",
+      "description": "可视化 LLM 工作流搭建平台",
+      "mode_0_name": "启动",
+      "mode_0_desc": "启动 LangFlow 服务",
+      "tag": "✅ 国内直连"
+    },
+    "Flowise": {
+      "display": "工作流平台",
+      "description": "低代码 LLM 工作流搭建平台",
+      "mode_0_name": "启动",
+      "mode_0_desc": "启动 Flowise 服务",
+      "tag": "✅ 国内直连"
+    },
+    "ClawAegis": {
+      "display": "安全防护 ClawAegis",
+      "description": "AI 安全防护与内容过滤",
+      "tag": "✅ 国内直连"
+    },
+    "LlamaCppPython": {
+      "display": "llama-cpp-python",
+      "description": "C++ 实现的 Llama 推理库 Python 绑定",
+      "tag": "✅ 国内直连"
+    },
+    "KimiCLI": {
+      "display": "命令行助手",
+      "description": "月之暗面 Kimi 官方终端 CLI 工具",
+      "tag": "✅ 国内直连"
+    },
+    "MiniMaxCLI": {
+      "display": "命令行助手",
+      "description": "MiniMax 官方终端 CLI 工具",
+      "tag": "✅ 国内直连"
+    },
+    "FrCli": {
+      "display": "凡人打字机 fr-cli",
+      "description": "凡人 AI 终端 CLI 工具",
+      "tag": "✅ 国内直连"
+    },
+    "ZaiSDK": {
+      "display": "智谱AI SDK",
+      "description": "智谱 AI 官方 Python SDK",
+      "tag": "✅ 国内直连"
+    },
+    "AskPy": {
+      "display": "命令行助手",
+      "description": "AI 命令行问答工具",
+      "tag": "✅ 国内直连"
+    },
+    "BaichuanCLI": {
+      "display": "百川 CLI 助手",
+      "description": "百川智能官方终端 CLI 工具",
+      "tag": "✅ 国内直连"
+    },
+    "DeepSeekSDK": {
+      "display": "Python SDK",
+      "description": "DeepSeek 官方 Python SDK",
+      "tag": "✅ 国内直连"
+    },
+    "TongyiSDK": {
+      "display": "阿里通义 DashScope SDK",
+      "description": "阿里通义千问官方 DashScope SDK",
+      "tag": "✅ 国内直连"
+    },
+    "CodeQL": {
+      "display": "CodeQL 安全审计",
+      "description": "GitHub 代码安全分析引擎",
+      "tag": "✅ 国内直连"
+    },
+    "Semgrep": {
+      "display": "代码分析",
+      "description": "轻量级静态代码安全分析工具",
+      "tag": "✅ 国内直连"
+    },
+    "Bearer": {
+      "display": "代码安全审计",
+      "description": "AI 代码安全审计与隐私分析工具",
+      "tag": "✅ 国内直连"
+    },
+    "n8n": {
+      "display": "工作流自动化",
+      "description": "开源工作流自动化平台",
+      "mode_0_name": "启动",
+      "mode_0_desc": "启动 n8n 服务",
+      "tag": "✅ 国内直连"
+    },
+    "AutoGPT": {
+      "display": "自动化代理",
+      "description": "自主 AI 代理，自动完成任务",
+      "tag": "✅ 国内直连"
+    },
+    "Airflow": {
+      "display": "Airflow",
+      "description": "开源工作流调度平台",
+      "tag": "✅ 国内直连"
+    },
+    "OpenHuman": {
+      "display": "个人AI助手",
+      "description": "开源桌面AI智能体，118+集成，记忆树，模型路由",
+      "mode_0_name": "桌面模式",
+      "mode_0_desc": "启动桌面AI助手",
+      "tag": "✅ 国内直连"
+    },
+    "HermesAgent": {
+      "display": "爱马仕智能体",
+      "description": "自主AI智能体，持久记忆，技能自动生成，越用越聪明",
+      "mode_0_name": "终端模式",
+      "mode_0_desc": "启动Hermes智能体",
+      "tag": "🔄 镜像安装"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+app:
+  name: "多语言翻译流水线"
+  mode: workflow
+  description: "输入原文→AI翻译(中/英/日/韩)→质量检查→术语一致性校验→输出。适合文档本地化"
+  icon: "🌐"
+workflow:
+  nodes:
+    - id: input
+      type: start
+      data:
+        variables:
+          - name: text
+            type: text
+            required: true
+            label: "待翻译文本"
+          - name: target_lang
+            type: select
+            options: ["en","ja","ko","zh-CN"]
+            label: "目标语言"
+    - id: translate
+      type: llm
+      data:
+        model: { provider: deepseek, name: deepseek-v4-pro }
+        prompt: "将以下文本翻译为{target_lang}，保持专业术语一致性:\n\n{text}"
+    - id: quality_check
+      type: llm
+      data:
+        model: { provider: qwen, name: qwen-turbo }
+        prompt: "检查以下翻译质量：是否通顺、术语是否准确、是否有遗漏。评分1-10并给出改进建议:\n\n原文:{text}\n译文:{translate.output}"
+    - id: output
+      type: end
+      data:
+        outputs:
+          - name: translation
+            value: "{{translate.output}}"
+          - name: quality_score
+            value: "{{quality_check.output}}"
+author: AgentHub-U

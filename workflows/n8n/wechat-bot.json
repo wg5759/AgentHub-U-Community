@@ -1,0 +1,68 @@
+{
+  "name": "WeChat AI Auto-Reply Bot",
+  "version": 1,
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "trigger-webhook",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [250, 300],
+      "webhookId": "wechat-message-receive"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=http://127.0.0.1:18766/api/v1/chat/completions",
+        "authentication": "genericCredentialType",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {"name": "Authorization", "value": "=Bearer {{ $env.AGENTHUB_API_KEY }}"},
+            {"name": "Content-Type", "value": "application/json"}
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {"name": "model", "value": "speed-chat"},
+            {"name": "messages[0][role]", "value": "user"},
+            {"name": "messages[0][content]", "value": "={{ $json.body?.message || $json.body?.Content }}"},
+            {"name": "max_tokens", "value": 500}
+          ]
+        }
+      },
+      "id": "ai-call",
+      "name": "AI 处理",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [500, 300]
+    },
+    {
+      "parameters": {
+        "content": "={{ $json.choices[0].message.content }}",
+        "toUser": "={{ $json.body?.FromUserName }}"
+      },
+      "id": "wechat-reply",
+      "name": "微信回复",
+      "type": "n8n-nodes-base.wechat",
+      "typeVersion": 1,
+      "position": [750, 300]
+    }
+  ],
+  "connections": {
+    "Webhook": { "main": [[{"node": "AI 处理", "type": "main", "index": 0}]] },
+    "AI 处理": { "main": [[{"node": "微信回复", "type": "main", "index": 0}]] }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Shanghai",
+    "callerPolicy": "workflowsFromSameOwner"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": false,
+    "instanceId": "agenthub-wechat-bot-template"
+  }
+}

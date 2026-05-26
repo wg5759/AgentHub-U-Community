@@ -1,0 +1,679 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-05-21",
+  "total": 24,
+  "workflows": [
+    {
+      "id": "comfyui-sdxl-portrait",
+      "tool": "ComfyUI",
+      "category": "image",
+      "display": {
+        "zh-CN": "SDXL 写真人像工作流",
+        "en": "SDXL Portrait Workflow",
+        "ja": "SDXL ポートレートワークフロー",
+        "ko": "SDXL 인물 사진 워크플로우"
+      },
+      "description": {
+        "zh-CN": "一键生成高质量写真人像，支持正反面Prompt控制，含面部修复和放大",
+        "en": "One-click high-quality portrait generation with positive/negative prompt control, face restoration and upscale",
+        "ja": "高品質ポートレートをワンクリックで生成、プロンプト制御、顔修復、アップスケール対応",
+        "ko": "원클릭 고품질 인물 사진 생성, 프롬프트 제어, 얼굴 복원 및 업스케일"
+      },
+      "tags": ["人像", "写真", "SDXL", "写实"],
+      "author": "AgentHub-U",
+      "download_url": "workflows/comfyui/sdxl-portrait.json",
+      "format": "json",
+      "import_guide": {
+        "zh-CN": "拖拽JSON文件到ComfyUI窗口即可加载",
+        "en": "Drag and drop the JSON file into ComfyUI window to load",
+        "ja": "JSONファイルをComfyUIウィンドウにドラッグ＆ドロップで読み込み",
+        "ko": "JSON 파일을 ComfyUI 창에 드래그 앤 드롭하여 로드"
+      },
+      "stars": 1280
+    },
+    {
+      "id": "comfyui-ecommerce-relight",
+      "tool": "ComfyUI",
+      "category": "ecommerce",
+      "display": {
+        "zh-CN": "电商产品重新打光工作流",
+        "en": "E-Commerce Product Relighting Workflow",
+        "ja": "EC商品ライティング変更ワークフロー",
+        "ko": "전자상거래 제품 재조명 워크플로우"
+      },
+      "description": {
+        "zh-CN": "电商产品摄影重新打光，保持产品结构同时改变灯光颜色和位置，适合半透明物体",
+        "en": "E-commerce product photography relighting. Maintains product structure while changing light color and position. Works with translucent objects.",
+        "ja": "EC商品写真のライティング変更。商品の構造を保ちながら光の色と位置を変更。半透明オブジェクトにも対応。",
+        "ko": "전자상거래 제품 사진 재조명. 제품 구조를 유지하면서 조명 색상과 위치 변경. 반투명 객체에도 작동."
+      },
+      "tags": ["电商", "产品摄影", "打光", "ControlNet"],
+      "author": "Amr Sha",
+      "download_url": "workflows/comfyui/ecommerce-relight.json",
+      "format": "json",
+      "import_guide": {
+        "zh-CN": "拖拽JSON到ComfyUI → 替换产品图和背景图 → 点击Queue",
+        "en": "Drag JSON to ComfyUI → Replace product/background images → Click Queue",
+        "ja": "JSONをComfyUIにドラッグ → 商品画像と背景を差し替え → Queueをクリック",
+        "ko": "JSON을 ComfyUI로 드래그 → 제품/배경 이미지 교체 → Queue 클릭"
+      },
+      "stars": 960
+    },
+    {
+      "id": "comfyui-img2img-upscale",
+      "tool": "ComfyUI",
+      "category": "image",
+      "display": {
+        "zh-CN": "4K自动放大工作流",
+        "en": "4K Auto Upscale Workflow",
+        "ja": "4K自動アップスケールワークフロー",
+        "ko": "4K 자동 업스케일 워크플로우"
+      },
+      "description": {
+        "zh-CN": "自动将图片放大到4K分辨率(4608x6912)，支持单图/文件夹批量处理，三次逐级放大最小损耗",
+        "en": "Auto upscale images to 4K resolution (4608x6912). Supports single/batch folder processing with 3-stage upscaling for minimal quality loss.",
+        "ja": "画像を4K解像度(4608x6912)に自動アップスケール。単一/フォルダバッチ処理対応、3段階アップスケールで最小限の品質損失。",
+        "ko": "이미지를 4K 해상도(4608x6912)로 자동 업스케일. 단일/폴더 배치 처리 지원, 3단계 업스케일로 최소 품질 손실."
+      },
+      "tags": ["放大", "4K", "批量处理", "Upscale"],
+      "author": "GHOSTLXH",
+      "download_url": "workflows/comfyui/img2img-upscale.json",
+      "format": "json",
+      "import_guide": {
+        "zh-CN": "拖拽JSON → 设置输入路径 → ComfyUI队列模式设为「自动执行(变动)」",
+        "en": "Drag JSON → Set input path → Set ComfyUI queue to Auto-execute",
+        "ja": "JSONをドラッグ → 入力パスを設定 → ComfyUIキューを自動実行に設定",
+        "ko": "JSON 드래그 → 입력 경로 설정 → ComfyUI 큐를 자동 실행으로 설정"
+      },
+      "stars": 2100
+    },
+    {
+      "id": "comfyui-controlnet-pose",
+      "tool": "ComfyUI",
+      "category": "image",
+      "display": {
+        "zh-CN": "ControlNet 姿势控制工作流",
+        "en": "ControlNet Pose Control Workflow",
+        "ja": "ControlNet ポーズ制御ワークフロー",
+        "ko": "ControlNet 포즈 제어 워크플로우"
+      },
+      "description": {
+        "zh-CN": "通过OpenPose骨骼控制人物姿势，精准生成指定动作的人物图片，支持多人场景",
+        "en": "Control character poses via OpenPose skeleton. Precisely generates images with specified actions. Supports multi-person scenes.",
+        "ja": "OpenPoseスケルトンでキャラクターポーズを制御。指定されたアクションの画像を精密に生成。複数人シーン対応。",
+        "ko": "OpenPose 스켈레톤으로 캐릭터 포즈 제어. 지정된 동작의 이미지를 정밀하게 생성. 다중 인물 장면 지원."
+      },
+      "tags": ["ControlNet", "姿势", "OpenPose", "人物"],
+      "author": "AgentHub-U",
+      "download_url": "workflows/comfyui/controlnet-pose.json",
+      "format": "json",
+      "import_guide": {
+        "zh-CN": "拖拽JSON → 上传参考姿势图 → 填写Prompt → Queue",
+        "en": "Drag JSON → Upload reference pose image → Fill in Prompt → Queue",
+        "ja": "JSONドラッグ → 参照ポーズ画像をアップロード → プロンプト入力 → Queue",
+        "ko": "JSON 드래그 → 참조 포즈 이미지 업로드 → 프롬프트 입력 → Queue"
+      },
+      "stars": 1850
+    },
+    {
+      "id": "comfyui-bg-remove",
+      "tool": "ComfyUI",
+      "category": "image",
+      "display": {
+        "zh-CN": "AI 背景移除工作流",
+        "en": "AI Background Removal Workflow",
+        "ja": "AI 背景除去ワークフロー",
+        "ko": "AI 배경 제거 워크플로우"
+      },
+      "description": {
+        "zh-CN": "一键移除图片背景，支持批量处理。可用于商品白底图、证件照换背景等场景",
+        "en": "One-click background removal with batch processing support. Useful for product white background, ID photo background replacement.",
+        "ja": "ワンクリック背景除去、バッチ処理対応。商品白背景、証明写真の背景差し替えに最適。",
+        "ko": "원클릭 배경 제거, 배치 처리 지원. 제품 흰색 배경, 증명사진 배경 교체에 유용."
+      },
+      "tags": ["抠图", "背景移除", "电商", "批量"],
+      "author": "AgentHub-U",
+      "download_url": "workflows/comfyui/bg-remove.json",
+      "format": "json",
+      "import_guide": {
+        "zh-CN": "拖拽JSON → 上传图片 → Queue",
+        "en": "Drag JSON → Upload image → Queue",
+        "ja": "JSONドラッグ → 画像アップロード → Queue",
+        "ko": "JSON 드래그 → 이미지 업로드 → Queue"
+      },
+      "stars": 1500
+    },
+    {
+      "id": "n8n-wechat-bot",
+      "tool": "n8n",
+      "category": "automation",
+      "display": {
+        "zh-CN": "微信自动回复机器人",
+        "en": "WeChat Auto-Reply Bot",
+        "ja": "WeChat 自動返信ボット",
+        "ko": "위챗 자동 응답 봇"
+      },
+      "description": {
+        "zh-CN": "接收微信消息 → AI处理 → 自动回复。支持个人微信和企业微信，可接入DeepSeek/Qwen等大模型",
+        "en": "Receive WeChat messages → AI processing → Auto reply. Supports personal & enterprise WeChat with DeepSeek/Qwen integration.",
+        "ja": "WeChatメッセージ受信 → AI処理 → 自動返信。個人/企業WeChat対応、DeepSeek/Qwen統合。",
+        "ko": "위챗 메시지 수신 → AI 처리 → 자동 응답. 개인/기업 위챗 지원, DeepSeek/Qwen 통합."
+      },
+      "tags": ["微信", "机器人", "自动回复", "AI"],
+      "author": "AgentHub-U",
+      "download_url": "workflows/n8n/wechat-bot.json",
+      "format": "json",
+      "import_guide": {
+        "zh-CN": "n8n → Settings → Import from File → 选择JSON → 配置微信凭证 → Active",
+        "en": "n8n → Settings → Import from File → Select JSON → Configure WeChat credentials → Active",
+        "ja": "n8n → 設定 → ファイルからインポート → JSON選択 → WeChat認証情報を設定 → 有効化",
+        "ko": "n8n → 설정 → 파일에서 가져오기 → JSON 선택 → WeChat 자격 증명 구성 → 활성화"
+      },
+      "stars": 3200
+    },
+    {
+      "id": "n8n-daily-report",
+      "tool": "n8n",
+      "category": "automation",
+      "display": {
+        "zh-CN": "AI日报自动生成工作流",
+        "en": "AI Daily Report Generator",
+        "ja": "AI日報自動生成ワークフロー",
+        "ko": "AI 일일 보고서 생성기"
+      },
+      "description": {
+        "zh-CN": "定时抓取数据源 → AI分析总结 → 生成日报 → 发送到飞书/钉钉/邮件。适合团队日报自动化",
+        "en": "Scheduled data collection → AI analysis & summary → Generate daily report → Send to Feishu/DingTalk/Email. Perfect for team daily reports.",
+        "ja": "定時データ収集 → AI分析・要約 → 日報生成 → Feishu/DingTalk/メールに送信。チーム日報自動化に最適。",
+        "ko": "예약 데이터 수집 → AI 분석 및 요약 → 일일 보고서 생성 → Feishu/DingTalk/이메일로 전송. 팀 일일 보고서 자동화에 완벽."
+      },
+      "tags": ["日报", "自动化", "飞书", "定时"],
+      "author": "AgentHub-U",
+      "download_url": "workflows/n8n/daily-report.json",
+      "format": "json",
+      "import_guide": {
+        "zh-CN": "n8n → Import → 配置数据源和Webhook → 设置定时触发器 → Active",
+        "en": "n8n → Import → Configure data sources & webhooks → Set schedule trigger → Active",
+        "ja": "n8n → インポート → データソースとWebhook設定 → スケジュールトリガー設定 → 有効化",
+        "ko": "n8n → 가져오기 → 데이터 소스 및 웹훅 구성 → 일정 트리거 설정 → 활성화"
+      },
+      "stars": 890
+    },
+    {
+      "id": "n8n-customer-service",
+      "tool": "n8n",
+      "category": "automation",
+      "display": {
+        "zh-CN": "AI智能客服工作流",
+        "en": "AI Customer Service Workflow",
+        "ja": "AIカスタマーサービスワークフロー",
+        "ko": "AI 고객 서비스 워크플로우"
+      },
+      "description": {
+        "zh-CN": "多渠道接入(微信/网页/飞书) → RAG知识库检索 → AI回答 → 自动转人工。含满意度评价",
+        "en": "Multi-channel (WeChat/Web/Feishu) → RAG knowledge retrieval → AI response → Auto-route to human. Includes satisfaction rating.",
+        "ja": "マルチチャネル(WeChat/Web/Feishu) → RAG知識検索 → AI応答 → 有人自動転送。満足度評価付き。",
+        "ko": "멀티채널(위챗/웹/Feishu) → RAG 지식 검색 → AI 응답 → 인간 자동 라우팅. 만족도 평가 포함."
+      },
+      "tags": ["客服", "RAG", "多语言", "知识库"],
+      "author": "AgentHub-U",
+      "download_url": "workflows/n8n/customer-service.json",
+      "format": "json",
+      "import_guide": {
+        "zh-CN": "n8n → Import → 配置知识库和渠道 → 测试 → Active",
+        "en": "n8n → Import → Configure knowledge base & channels → Test → Active",
+        "ja": "n8n → インポート → 知識ベースとチャネル設定 → テスト → 有効化",
+        "ko": "n8n → 가져오기 → 지식 베이스 및 채널 구성 → 테스트 → 활성화"
+      },
+      "stars": 2100
+    },
+    {
+      "id": "dify-rag-chatbot",
+      "tool": "Dify",
+      "category": "chat",
+      "display": {
+        "zh-CN": "RAG 知识库问答机器人",
+        "en": "RAG Knowledge Base Q&A Bot",
+        "ja": "RAG ナレッジベースQ&Aボット",
+        "ko": "RAG 지식 베이스 Q&A 봇"
+      },
+      "description": {
+        "zh-CN": "上传文档 → 自动分段 → 向量化 → 用户提问 → 检索+生成回答。支持PDF/Word/网页等多格式",
+        "en": "Upload docs → Auto-chunk → Vectorize → User query → Retrieve + Generate answer. Supports PDF/Word/Web and more formats.",
+        "ja": "ドキュメントアップロード → 自動分割 → ベクトル化 → ユーザー質問 → 検索+回答生成。PDF/Word/Web等複数形式対応。",
+        "ko": "문서 업로드 → 자동 청크 → 벡터화 → 사용자 질문 → 검색 + 답변 생성. PDF/Word/웹 등 다양한 형식 지원."
+      },
+      "tags": ["RAG", "知识库", "问答", "文档"],
+      "author": "AgentHub-U",
+      "download_url": "workflows/dify/rag-chatbot.yml",
+      "format": "yml",
+      "import_guide": {
+        "zh-CN": "Dify → 工作室 → 导入DSL → 上传知识库文档 → 发布",
+        "en": "Dify → Studio → Import DSL → Upload knowledge docs → Publish",
+        "ja": "Dify → スタジオ → DSLインポート → ナレッジドキュメントアップロード → 公開",
+        "ko": "Dify → 스튜디오 → DSL 가져오기 → 지식 문서 업로드 → 게시"
+      },
+      "stars": 4500
+    },
+    {
+      "id": "dify-multi-agent",
+      "tool": "Dify",
+      "category": "chat",
+      "display": {
+        "zh-CN": "多Agent协作工作流",
+        "en": "Multi-Agent Collaboration Workflow",
+        "ja": "マルチエージェント協調ワークフロー",
+        "ko": "멀티 에이전트 협업 워크플로우"
+      },
+      "description": {
+        "zh-CN": "多个AI Agent分工协作：研究员搜集信息 → 分析师整理 → 写作者输出。适合深度报告、市场分析",
+        "en": "Multiple AI agents collaborating: Researcher gathers info → Analyst organizes → Writer outputs. Perfect for deep reports, market analysis.",
+        "ja": "複数AIエージェントが協調：研究者が情報収集 → 分析者が整理 → ライターが出力。詳細レポート、市場分析に最適。",
+        "ko": "여러 AI 에이전트 협업: 연구원이 정보 수집 → 분석가가 정리 → 작성자가 출력. 심층 보고서, 시장 분석에 완벽."
+      },
+      "tags": ["多Agent", "协作", "报告", "分析"],
+      "author": "AgentHub-U",
+      "download_url": "workflows/dify/multi-agent.yml",
+      "format": "yml",
+      "import_guide": {
+        "zh-CN": "Dify → 导入DSL → 配置各Agent的LLM → 测试 → 发布",
+        "en": "Dify → Import DSL → Configure LLM for each Agent → Test → Publish",
+        "ja": "Dify → DSLインポート → 各エージェントのLLM設定 → テスト → 公開",
+        "ko": "Dify → DSL 가져오기 → 각 에이전트의 LLM 구성 → 테스트 → 게시"
+      },
+      "stars": 2800
+    },
+    {
+      "id": "dify-translation-pipeline",
+      "tool": "Dify",
+      "category": "text",
+      "display": {
+        "zh-CN": "多语言翻译流水线",
+        "en": "Multi-Language Translation Pipeline",
+        "ja": "多言語翻訳パイプライン",
+        "ko": "다국어 번역 파이프라인"
+      },
+      "description": {
+        "zh-CN": "输入原文 → AI翻译(中/英/日/韩) → 质量检查 → 术语一致性校验 → 输出。适合文档本地化",
+        "en": "Input text → AI translation (ZH/EN/JA/KO) → Quality check → Terminology consistency → Output. Perfect for document localization.",
+        "ja": "原文入力 → AI翻訳(中/英/日/韓) → 品質チェック → 用語一貫性検証 → 出力。ドキュメントローカライズに最適。",
+        "ko": "원문 입력 → AI 번역(중/영/일/한) → 품질 검사 → 용어 일관성 → 출력. 문서 현지화에 완벽."
+      },
+      "tags": ["翻译", "多语言", "本地化", "质量"],
+      "author": "AgentHub-U",
+      "download_url": "workflows/dify/translation-pipeline.yml",
+      "format": "yml",
+      "import_guide": {
+        "zh-CN": "Dify → 导入DSL → 配置术语表 → 测试翻译 → 发布API",
+        "en": "Dify → Import DSL → Configure glossary → Test translation → Publish API",
+        "ja": "Dify → DSLインポート → 用語集設定 → 翻訳テスト → API公開",
+        "ko": "Dify → DSL 가져오기 → 용어집 구성 → 번역 테스트 → API 게시"
+      },
+      "stars": 1200
+    },
+    {
+      "id": "flowise-sql-agent",
+      "tool": "Flowise",
+      "category": "data",
+      "display": {
+        "zh-CN": "SQL 查询 Agent",
+        "en": "SQL Query Agent",
+        "ja": "SQL クエリエージェント",
+        "ko": "SQL 쿼리 에이전트"
+      },
+      "description": {
+        "zh-CN": "自然语言提问 → AI生成SQL → 执行查询 → 结果解读。支持MySQL/PostgreSQL/SQLite",
+        "en": "Natural language question → AI generates SQL → Execute query → Result interpretation. Supports MySQL/PostgreSQL/SQLite.",
+        "ja": "自然言語質問 → AIがSQL生成 → クエリ実行 → 結果解釈。MySQL/PostgreSQL/SQLite対応。",
+        "ko": "자연어 질문 → AI가 SQL 생성 → 쿼리 실행 → 결과 해석. MySQL/PostgreSQL/SQLite 지원."
+      },
+      "tags": ["SQL", "数据库", "自然语言", "查询"],
+      "author": "AgentHub-U",
+      "download_url": "workflows/flowise/sql-agent.json",
+      "format": "json",
+      "import_guide": {
+        "zh-CN": "Flowise → Import Chatflow → 配置数据库连接 → 保存 → 测试",
+        "en": "Flowise → Import Chatflow → Configure DB connection → Save → Test",
+        "ja": "Flowise → チャットフローインポート → DB接続設定 → 保存 → テスト",
+        "ko": "Flowise → 채팅플로우 가져오기 → DB 연결 구성 → 저장 → 테스트"
+      },
+      "stars": 1800
+    },
+    {
+      "id": "flowise-doc-qa",
+      "tool": "Flowise",
+      "category": "chat",
+      "display": {
+        "zh-CN": "文档问答机器人",
+        "en": "Document Q&A Bot",
+        "ja": "ドキュメントQ&Aボット",
+        "ko": "문서 Q&A 봇"
+      },
+      "description": {
+        "zh-CN": "上传PDF/Word/网页 → 自动向量化 → 用户提问 → 精确检索+回答。含引用来源标注",
+        "en": "Upload PDF/Word/Web → Auto vectorize → User question → Precise retrieval + answer. Includes source citation.",
+        "ja": "PDF/Word/Webアップロード → 自動ベクトル化 → ユーザー質問 → 精密検索+回答。出典引用付き。",
+        "ko": "PDF/Word/웹 업로드 → 자동 벡터화 → 사용자 질문 → 정밀 검색 + 답변. 출처 인용 포함."
+      },
+      "tags": ["文档", "问答", "RAG", "PDF"],
+      "author": "AgentHub-U",
+      "download_url": "workflows/flowise/doc-qa.json",
+      "format": "json",
+      "import_guide": {
+        "zh-CN": "Flowise → Import → 上传文档 → 配置Embedding模型 → 测试聊天",
+        "en": "Flowise → Import → Upload documents → Configure Embedding model → Test chat",
+        "ja": "Flowise → インポート → ドキュメントアップロード → Embeddingモデル設定 → チャットテスト",
+        "ko": "Flowise → 가져오기 → 문서 업로드 → Embedding 모델 구성 → 채팅 테스트"
+      },
+      "stars": 2200
+    },
+    {
+      "id": "comfyui-batch-process",
+      "tool": "ComfyUI",
+      "category": "image",
+      "display": {
+        "zh-CN": "批量图片处理工作流",
+        "en": "Batch Image Processing Workflow",
+        "ja": "バッチ画像処理ワークフロー",
+        "ko": "배치 이미지 처리 워크플로우"
+      },
+      "description": {
+        "zh-CN": "批量处理图片文件夹，支持统一加水印、调色和裁剪操作",
+        "en": "Batch process image folders with unified watermarking, color grading, and cropping",
+        "ja": "画像フォルダを一括処理。透かし、色調整、トリミングに対応",
+        "ko": "이미지 폴더 일괄 처리. 워터마크, 색상 보정, 자르기 지원"
+      },
+      "tags": ["批量", "处理", "水印", "调色"],
+      "author": "AgentHub-U",
+      "download_url": "workflows/comfyui/batch-process.json",
+      "format": "json",
+      "import_guide": {
+        "zh-CN": "拖拽JSON → 设置输入输出路径 → 调整参数 → Queue",
+        "en": "Drag JSON → Set input/output paths → Adjust parameters → Queue",
+        "ja": "JSONドラッグ → 入出力パス設定 → パラメータ調整 → Queue",
+        "ko": "JSON 드래그 → 입출력 경로 설정 → 매개변수 조정 → Queue"
+      },
+      "stars": 1350
+    },
+    {
+      "id": "comfyui-style-transfer",
+      "tool": "ComfyUI",
+      "category": "image",
+      "display": {
+        "zh-CN": "风格迁移工作流",
+        "en": "Style Transfer Workflow",
+        "ja": "スタイル変換ワークフロー",
+        "ko": "스타일 트랜스퍼 워크플로우"
+      },
+      "description": {
+        "zh-CN": "将任意图片风格应用到目标图片，支持油画、水彩和动漫风格",
+        "en": "Apply any image style to target image. Supports oil painting, watercolor and anime",
+        "ja": "任意の画像スタイルを対象画像に適用。油絵、水彩、アニメ対応",
+        "ko": "모든 이미지 스타일을 대상 이미지에 적용. 유화, 수채화, 애니메이션 지원"
+      },
+      "tags": ["风格迁移", "滤镜", "艺术", "转换"],
+      "author": "AgentHub-U",
+      "download_url": "workflows/comfyui/style-transfer.json",
+      "format": "json",
+      "import_guide": {
+        "zh-CN": "拖拽JSON → 上传内容图和风格图 → Queue",
+        "en": "Drag JSON → Upload content and style images → Queue",
+        "ja": "JSONドラッグ → コンテンツ画像とスタイル画像をアップロード → Queue",
+        "ko": "JSON 드래그 → 콘텐츠 이미지와 스타일 이미지 업로드 → Queue"
+      },
+      "stars": 1700
+    },
+    {
+      "id": "comfyui-image-blend",
+      "tool": "ComfyUI",
+      "category": "image",
+      "display": {
+        "zh-CN": "图像融合工作流",
+        "en": "Image Blending Workflow",
+        "ja": "画像合成ワークフロー",
+        "ko": "이미지 블렌딩 워크플로우"
+      },
+      "description": {
+        "zh-CN": "将多张图片自然融合，支持透明度控制、蒙版和渐变效果",
+        "en": "Naturally blend multiple images with opacity control, masking and gradient effects",
+        "ja": "複数の画像を自然に合成。透明度制御、マスク、グラデーション効果対応",
+        "ko": "여러 이미지를 자연스럽게 혼합. 투명도 제어, 마스킹, 그라데이션 효과 지원"
+      },
+      "tags": ["融合", "合成", "蒙版", "渐变"],
+      "author": "AgentHub-U",
+      "download_url": "workflows/comfyui/image-blend.json",
+      "format": "json",
+      "import_guide": {
+        "zh-CN": "拖拽JSON → 上传图片 → 调整融合参数 → Queue",
+        "en": "Drag JSON → Upload images → Adjust blend parameters → Queue",
+        "ja": "JSONドラッグ → 画像アップロード → 合成パラメータ調整 → Queue",
+        "ko": "JSON 드래그 → 이미지 업로드 → 블렌드 매개변수 조정 → Queue"
+      },
+      "stars": 1100
+    },
+    {
+      "id": "n8n-email-auto",
+      "tool": "n8n",
+      "category": "automation",
+      "display": {
+        "zh-CN": "邮件自动发送工作流",
+        "en": "Email Auto-Send Workflow",
+        "ja": "メール自動送信ワークフロー",
+        "ko": "이메일 자동 발송 워크플로우"
+      },
+      "description": {
+        "zh-CN": "定时或触发自动发送批量邮件，支持模板变量、附件和追踪",
+        "en": "Schedule or trigger automated bulk email sending with templates, attachments and tracking",
+        "ja": "定時またはトリガーで一括メール自動送信。テンプレート、添付、追跡対応",
+        "ko": "예약 또는 트리거로 대량 이메일 자동 발송. 템플릿, 첨부파일, 추적 지원"
+      },
+      "tags": ["邮件", "自动化", "营销", "模板"],
+      "author": "AgentHub-U",
+      "download_url": "workflows/n8n/email-auto.json",
+      "format": "json",
+      "import_guide": {
+        "zh-CN": "n8n → Import → 配置SMTP → 设置模板和触发条件 → Active",
+        "en": "n8n → Import → Configure SMTP → Set templates & triggers → Active",
+        "ja": "n8n → インポート → SMTP設定 → テンプレートとトリガー設定 → 有効化",
+        "ko": "n8n → 가져오기 → SMTP 구성 → 템플릿 및 트리거 설정 → 활성화"
+      },
+      "stars": 1450
+    },
+    {
+      "id": "n8n-social-poster",
+      "tool": "n8n",
+      "category": "automation",
+      "display": {
+        "zh-CN": "社交媒体自动发布工作流",
+        "en": "Social Media Auto-Poster Workflow",
+        "ja": "ソーシャルメディア自動投稿ワークフロー",
+        "ko": "소셜 미디어 자동 게시 워크플로우"
+      },
+      "description": {
+        "zh-CN": "定时自动发布内容到微博、微信公众号和Twitter等多平台",
+        "en": "Schedule automatic posting to Weibo, WeChat Official Account, Twitter and more",
+        "ja": "Weibo/WeChat公式アカウント/Twitter等に自動投稿をスケジュール",
+        "ko": "Weibo/WeChat 공식 계정/Twitter 등에 자동 게시 예약"
+      },
+      "tags": ["社交媒体", "发布", "定时", "多平台"],
+      "author": "AgentHub-U",
+      "download_url": "workflows/n8n/social-poster.json",
+      "format": "json",
+      "import_guide": {
+        "zh-CN": "n8n → Import → 配置各平台API密钥 → 设置发布计划 → Active",
+        "en": "n8n → Import → Configure platform API keys → Set schedule → Active",
+        "ja": "n8n → インポート → 各プラットフォームAPIキー設定 → スケジュール設定 → 有効化",
+        "ko": "n8n → 가져오기 → 각 플랫폼 API 키 구성 → 일정 설정 → 활성화"
+      },
+      "stars": 980
+    },
+    {
+      "id": "n8n-data-sync",
+      "tool": "n8n",
+      "category": "data",
+      "display": {
+        "zh-CN": "跨平台数据同步工作流",
+        "en": "Cross-Platform Data Sync Workflow",
+        "ja": "クロスプラットフォームデータ同期ワークフロー",
+        "ko": "플랫폼 간 데이터 동기화 워크플로우"
+      },
+      "description": {
+        "zh-CN": "自动同步Airtable、飞书多维表格、Excel和数据库间的数据变更",
+        "en": "Auto-sync data changes between Airtable, Feishu Bitable, Excel and databases",
+        "ja": "Airtable/Feishu多次元テーブル/Excel/DB間のデータ変更を自動同期",
+        "ko": "Airtable/Feishu Bitable/Excel/데이터베이스 간 데이터 변경 자동 동기화"
+      },
+      "tags": ["数据同步", "集成", "自动化", "跨平台"],
+      "author": "AgentHub-U",
+      "download_url": "workflows/n8n/data-sync.json",
+      "format": "json",
+      "import_guide": {
+        "zh-CN": "n8n → Import → 配置数据源和目标 → 设置同步规则 → Active",
+        "en": "n8n → Import → Configure sources and targets → Set sync rules → Active",
+        "ja": "n8n → インポート → データソースとターゲット設定 → 同期ルール設定 → 有効化",
+        "ko": "n8n → 가져오기 → 데이터 소스 및 대상 구성 → 동기화 규칙 설정 → 활성화"
+      },
+      "stars": 2200
+    },
+    {
+      "id": "dify-code-review",
+      "tool": "Dify",
+      "category": "development",
+      "display": {
+        "zh-CN": "代码审查机器人",
+        "en": "Code Review Bot",
+        "ja": "コードレビューボット",
+        "ko": "코드 리뷰 봇"
+      },
+      "description": {
+        "zh-CN": "自动审查PR代码，检查安全漏洞、代码风格和性能问题",
+        "en": "Auto-review PR code for security vulnerabilities, code style and performance issues",
+        "ja": "PRコードを自動レビュー。セキュリティ脆弱性、コードスタイル、パフォーマンス問題をチェック",
+        "ko": "PR 코드 자동 리뷰. 보안 취약점, 코드 스타일, 성능 문제 확인"
+      },
+      "tags": ["代码审查", "开发", "PR", "自动化"],
+      "author": "AgentHub-U",
+      "download_url": "workflows/dify/code-review.yml",
+      "format": "yml",
+      "import_guide": {
+        "zh-CN": "Dify → 导入DSL → 配置GitHub Webhook → 设置审查规则 → 发布",
+        "en": "Dify → Import DSL → Configure GitHub Webhook → Set review rules → Publish",
+        "ja": "Dify → DSLインポート → GitHub Webhook設定 → レビュールール設定 → 公開",
+        "ko": "Dify → DSL 가져오기 → GitHub Webhook 구성 → 검토 규칙 설정 → 게시"
+      },
+      "stars": 3600
+    },
+    {
+      "id": "dify-meeting-summary",
+      "tool": "Dify",
+      "category": "productivity",
+      "display": {
+        "zh-CN": "会议纪要自动生成",
+        "en": "Meeting Summary Generator",
+        "ja": "会議議事録自動生成",
+        "ko": "회의록 자동 생성"
+      },
+      "description": {
+        "zh-CN": "上传会议录音或文字稿，AI自动提取议程、决策和行动项",
+        "en": "Upload meeting recording or transcript, AI extracts agenda, decisions and action items",
+        "ja": "会議録音や文字起こしをアップロード。AIが議題、決定事項、アクション項目を抽出",
+        "ko": "회의 녹음 또는 대본 업로드. AI가 의제, 결정 사항, 액션 항목 추출"
+      },
+      "tags": ["会议", "纪要", "总结", "效率"],
+      "author": "AgentHub-U",
+      "download_url": "workflows/dify/meeting-summary.yml",
+      "format": "yml",
+      "import_guide": {
+        "zh-CN": "Dify → 导入DSL → 配置转录来源 → 设置摘要模板 → 发布",
+        "en": "Dify → Import DSL → Configure transcription source → Set summary template → Publish",
+        "ja": "Dify → DSLインポート → 文字起こしソース設定 → 要約テンプレート設定 → 公開",
+        "ko": "Dify → DSL 가져오기 → 기록 소스 구성 → 요약 템플릿 설정 → 게시"
+      },
+      "stars": 2600
+    },
+    {
+      "id": "dify-seo-content",
+      "tool": "Dify",
+      "category": "content",
+      "display": {
+        "zh-CN": "SEO内容生成器",
+        "en": "SEO Content Generator",
+        "ja": "SEOコンテンツジェネレーター",
+        "ko": "SEO 콘텐츠 생성기"
+      },
+      "description": {
+        "zh-CN": "输入关键词，AI生成SEO优化文章，含标题、描述和关键词布局",
+        "en": "Input keywords, AI generates SEO-optimized articles with titles, descriptions and keyword layout",
+        "ja": "キーワード入力、AIがSEO最適化記事を生成。タイトル、説明、キーワード配置含む",
+        "ko": "키워드 입력, AI가 SEO 최적화 문서 생성. 제목, 설명, 키워드 배치 포함"
+      },
+      "tags": ["SEO", "内容", "生成", "关键词"],
+      "author": "AgentHub-U",
+      "download_url": "workflows/dify/seo-content.yml",
+      "format": "yml",
+      "import_guide": {
+        "zh-CN": "Dify → 导入DSL → 配置SEO规则 → 输入关键词 → 生成",
+        "en": "Dify → Import DSL → Configure SEO rules → Input keywords → Generate",
+        "ja": "Dify → DSLインポート → SEOルール設定 → キーワード入力 → 生成",
+        "ko": "Dify → DSL 가져오기 → SEO 규칙 구성 → 키워드 입력 → 생성"
+      },
+      "stars": 1900
+    },
+    {
+      "id": "flowise-resume-screen",
+      "tool": "Flowise",
+      "category": "hr",
+      "display": {
+        "zh-CN": "简历筛选机器人",
+        "en": "Resume Screening Bot",
+        "ja": "履歴書選考ボット",
+        "ko": "이력서 심사 봇"
+      },
+      "description": {
+        "zh-CN": "自动解析简历并评分，按职位要求匹配候选人，推荐最佳人选",
+        "en": "Auto-parse and score resumes, match candidates to job requirements and recommend best hires",
+        "ja": "履歴書を自動解析・採点。職務要件に基づき候補者をマッチング、最適な人材を推薦",
+        "ko": "이력서 자동 분석 및 평가. 직무 요구사항에 따라 후보자 매칭, 최적 인재 추천"
+      },
+      "tags": ["简历", "筛选", "招聘", "HR"],
+      "author": "AgentHub-U",
+      "download_url": "workflows/flowise/resume-screen.json",
+      "format": "json",
+      "import_guide": {
+        "zh-CN": "Flowise → Import → 上传JD模板 → 配置评分标准 → 批量筛选",
+        "en": "Flowise → Import → Upload JD template → Configure scoring criteria → Batch screen",
+        "ja": "Flowise → インポート → JDテンプレートアップロード → 評価基準設定 → 一括選考",
+        "ko": "Flowise → 가져오기 → JD 템플릿 업로드 → 평가 기준 구성 → 일괄 심사"
+      },
+      "stars": 3100
+    },
+    {
+      "id": "flowise-api-docs",
+      "tool": "Flowise",
+      "category": "development",
+      "display": {
+        "zh-CN": "API文档生成器",
+        "en": "API Documentation Generator",
+        "ja": "APIドキュメントジェネレーター",
+        "ko": "API 문서 생성기"
+      },
+      "description": {
+        "zh-CN": "上传API代码或规范，自动生成格式完整的API接口文档",
+        "en": "Upload API code or specification, auto-generates complete formatted API documentation",
+        "ja": "APIコードや仕様をアップロード。完全なAPIドキュメントを自動生成",
+        "ko": "API 코드나 사양 업로드. 완전한 형식의 API 문서 자동 생성"
+      },
+      "tags": ["API", "文档", "生成", "开发"],
+      "author": "AgentHub-U",
+      "download_url": "workflows/flowise/api-docs.json",
+      "format": "json",
+      "import_guide": {
+        "zh-CN": "Flowise → Import → 上传代码或规范文件 → 选择输出格式 → 生成",
+        "en": "Flowise → Import → Upload code or spec files → Select output format → Generate",
+        "ja": "Flowise → インポート → コードや仕様ファイルアップロード → 出力形式選択 → 生成",
+        "ko": "Flowise → 가져오기 → 코드나 사양 파일 업로드 → 출력 형식 선택 → 생성"
+      },
+      "stars": 1600
+    }
+  ]
+}

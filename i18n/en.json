@@ -1,0 +1,466 @@
+{
+  "categories": {
+    "coding": "Coding",
+    "chat": "Chat",
+    "framework": "Frameworks",
+    "data": "Data Tools",
+    "drawing": "Drawing & Creative",
+    "video": "Video Generation",
+    "audio": "Audio & Voice",
+    "deploy": "Deployment",
+    "regional": "Regional AI",
+    "security": "Security",
+    "automation": "Automation"
+  },
+  "tools": {
+    "OpenCode": {
+      "display": "OpenCode",
+      "description": "Terminal AI coding assistant, multi-model support",
+      "mode_0_name": "Terminal",
+      "mode_0_desc": "Run in new terminal window",
+      "mode_1_name": "Web UI",
+      "mode_1_desc": "Start web server",
+      "tag": "✅ Direct Access"
+    },
+    "OpenClaw": {
+      "display": "OpenClaw",
+      "description": "AI coding assistant in terminal",
+      "mode_0_name": "Chat",
+      "mode_0_desc": "Start chat",
+      "mode_1_name": "Web UI",
+      "mode_1_desc": "Start web server",
+      "tag": "✅ Direct Access"
+    },
+    "ClaudeCode": {
+      "display": "Claude Code",
+      "description": "Official Anthropic coding agent",
+      "tag": "🔄 Mirror Install"
+    },
+    "Codex": {
+      "display": "Codex CLI",
+      "description": "OpenAI official coding agent in terminal",
+      "tag": "🔄 Mirror Install"
+    },
+    "Aider": {
+      "display": "Aider",
+      "description": "AI pair programming in terminal",
+      "tag": "✅ Direct Access"
+    },
+    "OpenInterpreter": {
+      "display": "Open Interpreter",
+      "description": "Open-source coding agent controlling your computer",
+      "tag": "✅ Direct Access"
+    },
+    "GeminiCLI": {
+      "display": "Gemini CLI",
+      "description": "Google Gemini official CLI tool",
+      "tag": "🔄 Mirror Install"
+    },
+    "Cline": {
+      "display": "Cline",
+      "description": "Terminal AI coding agent for autonomous development",
+      "tag": "🔄 Mirror Install"
+    },
+    "CursorCLI": {
+      "display": "Cursor CLI",
+      "description": "Cursor editor terminal AI interface",
+      "tag": "🔄 Mirror Install"
+    },
+    "Goose": {
+      "display": "Goose",
+      "description": "Block's open-source AI coding agent",
+      "tag": "✅ Direct Access"
+    },
+    "MistralVibe": {
+      "display": "Mistral Vibe",
+      "description": "Mistral AI terminal coding agent",
+      "tag": "🔄 Mirror Install"
+    },
+    "QwenCode": {
+      "display": "QwenCode",
+      "description": "Alibaba Qwen official coding CLI",
+      "tag": "✅ Direct Access"
+    },
+    "Continue": {
+      "display": "Continue",
+      "description": "Open-source AI coding assistant for IDEs",
+      "tag": "🔄 Mirror Install"
+    },
+    "Tabby": {
+      "display": "Tabby",
+      "description": "Self-hosted AI coding assistant with autocomplete",
+      "tag": "🔄 Mirror Install"
+    },
+    "Ollama": {
+      "display": "Ollama",
+      "description": "Run LLMs locally, private, offline-capable",
+      "mode_0_name": "Server",
+      "mode_0_desc": "Start Ollama server",
+      "mode_1_name": "Run",
+      "mode_1_desc": "Run llama3.3 model",
+      "tag": "✅ Direct Access"
+    },
+    "Hermes": {
+      "display": "Hermes",
+      "description": "General AI agent framework for terminal",
+      "tag": "✅ Direct Access"
+    },
+    "Dify": {
+      "display": "Dify",
+      "description": "Visual AI app builder with drag-and-drop workflow",
+      "mode_0_name": "Start",
+      "mode_0_desc": "Start Dify server",
+      "mode_1_name": "Stop",
+      "mode_1_desc": "Stop Dify server",
+      "tag": "🔄 Mirror Install"
+    },
+    "OpenWebUI": {
+      "display": "OpenWebUI",
+      "description": "Local LLM chat interface, Ollama-compatible",
+      "tag": "🔄 Mirror Install"
+    },
+    "LobeChat": {
+      "display": "LobeChat",
+      "description": "Modern AI chat platform with multi-model support",
+      "tag": "🔄 Mirror Install"
+    },
+    "NextChat": {
+      "display": "NextChat",
+      "description": "Self-hosted ChatGPT web interface",
+      "tag": "🔄 Mirror Install"
+    },
+    "LangChain": {
+      "display": "LangChain",
+      "description": "Most popular LLM application framework",
+      "tag": "✅ Direct Access"
+    },
+    "CrewAI": {
+      "display": "CrewAI",
+      "description": "Multi-AI agent orchestration framework",
+      "tag": "✅ Direct Access"
+    },
+    "AutoGen": {
+      "display": "AutoGen",
+      "description": "Microsoft multi-agent conversation framework",
+      "tag": "✅ Direct Access"
+    },
+    "AG2": {
+      "display": "AG2",
+      "description": "Multi-agent framework (AutoGen fork)",
+      "tag": "✅ Direct Access"
+    },
+    "LlamaIndex": {
+      "display": "LlamaIndex",
+      "description": "Connect LLMs with external data",
+      "tag": "✅ Direct Access"
+    },
+    "Haystack": {
+      "display": "Haystack",
+      "description": "Enterprise search and RAG framework",
+      "tag": "✅ Direct Access"
+    },
+    "Phidata": {
+      "display": "Phidata",
+      "description": "AI agent building framework with multi-tool support",
+      "tag": "✅ Direct Access"
+    },
+    "OpenAIAgentsSDK": {
+      "display": "OpenAI Agents SDK",
+      "description": "Official OpenAI AI agent development SDK",
+      "tag": "✅ Direct Access"
+    },
+    "LangGraph": {
+      "display": "LangGraph",
+      "description": "LangChain's agent orchestration framework",
+      "tag": "✅ Direct Access"
+    },
+    "MetaGPT": {
+      "display": "MetaGPT",
+      "description": "Multi-role AI software development framework",
+      "tag": "✅ Direct Access"
+    },
+    "Mastra": {
+      "display": "Mastra",
+      "description": "TypeScript AI application framework",
+      "tag": "✅ Direct Access"
+    },
+    "SemanticKernel": {
+      "display": "Semantic Kernel",
+      "description": "Microsoft AI orchestration SDK, multi-language",
+      "tag": "✅ Direct Access"
+    },
+    "Gradio": {
+      "display": "Gradio",
+      "description": "Python library for rapid ML app demos",
+      "tag": "✅ Direct Access"
+    },
+    "DSPy": {
+      "display": "DSPy",
+      "description": "Framework for programming LLMs instead of prompting",
+      "tag": "✅ Direct Access"
+    },
+    "ChromaDB": {
+      "display": "ChromaDB",
+      "description": "Lightweight vector database for RAG",
+      "tag": "✅ Direct Access"
+    },
+    "Mem0": {
+      "display": "Mem0",
+      "description": "AI memory layer for persistent conversation memory",
+      "tag": "✅ Direct Access"
+    },
+    "Qdrant": {
+      "display": "Qdrant",
+      "description": "High-performance vector search engine",
+      "tag": "✅ Direct Access"
+    },
+    "Weaviate": {
+      "display": "Weaviate",
+      "description": "Cloud-native vector database with hybrid search",
+      "tag": "✅ Direct Access"
+    },
+    "MilvusLite": {
+      "display": "MilvusLite",
+      "description": "Lightweight Milvus vector database, embeddable",
+      "tag": "✅ Direct Access"
+    },
+    "Unstructured": {
+      "display": "Unstructured",
+      "description": "Unstructured document parser, PDF/HTML/DOCX",
+      "tag": "✅ Direct Access"
+    },
+    "NeMoGuardrails": {
+      "display": "NeMo Guardrails",
+      "description": "NVIDIA open-source AI safety toolkit",
+      "tag": "✅ Direct Access"
+    },
+    "Guardrails": {
+      "display": "Guardrails AI",
+      "description": "AI output guardrails and structured validation",
+      "tag": "✅ Direct Access"
+    },
+    "txtai": {
+      "display": "txtai",
+      "description": "AI-powered semantic search and data extraction",
+      "tag": "✅ Direct Access"
+    },
+    "LanceDB": {
+      "display": "LanceDB",
+      "description": "Embedded vector database built on Lance column format",
+      "tag": "✅ Direct Access"
+    },
+    "Docling": {
+      "display": "Docling",
+      "description": "IBM open-source document understanding and conversion",
+      "tag": "✅ Direct Access"
+    },
+    "ComfyUI": {
+      "display": "ComfyUI",
+      "description": "Node-based Stable Diffusion workflow UI",
+      "mode_0_name": "Start",
+      "mode_0_desc": "Start ComfyUI server",
+      "mode_1_name": "Low VRAM Mode",
+      "mode_1_desc": "Start in low VRAM mode",
+      "tag": "🔄 Mirror Install"
+    },
+    "SDWebUI": {
+      "display": "Stable Diffusion WebUI",
+      "description": "Most popular Stable Diffusion web interface",
+      "mode_0_name": "Start",
+      "mode_0_desc": "Start SD WebUI",
+      "mode_1_name": "Share",
+      "mode_1_desc": "Start and generate public link",
+      "tag": "🔄 Mirror Install"
+    },
+    "InvokeAI": {
+      "display": "InvokeAI",
+      "description": "Professional AI art generation platform",
+      "tag": "🔄 Mirror Install"
+    },
+    "Fooocus": {
+      "display": "Fooocus",
+      "description": "Minimalist AI image generator, one-click quality",
+      "tag": "✅ Direct Access"
+    },
+    "AnimateDiff": {
+      "display": "AnimateDiff",
+      "description": "Text-to-video animation based on Stable Diffusion",
+      "tag": "✅ Direct Access"
+    },
+    "Wan2.1": {
+      "display": "Wan2.1",
+      "description": "Alibaba Wan video generation model",
+      "tag": "✅ Direct Access"
+    },
+    "CogVideoX": {
+      "display": "CogVideoX",
+      "description": "Zhipu AI open-source video generation model",
+      "tag": "✅ Direct Access"
+    },
+    "OpenSora": {
+      "display": "Open-Sora",
+      "description": "Open-source text-to-video, Sora-like architecture",
+      "tag": "✅ Direct Access"
+    },
+    "HunyuanVideo": {
+      "display": "HunyuanVideo",
+      "description": "Tencent Hunyuan video generation model",
+      "tag": "✅ Direct Access"
+    },
+    "StepVideo": {
+      "display": "StepVideo",
+      "description": "Stepfun open-source video generation model",
+      "tag": "✅ Direct Access"
+    },
+    "Whisper": {
+      "display": "Whisper",
+      "description": "OpenAI open-source speech recognition",
+      "tag": "✅ Direct Access"
+    },
+    "FunASR": {
+      "display": "FunASR",
+      "description": "Alibaba DAMO Academy open-source ASR toolkit",
+      "tag": "✅ Direct Access"
+    },
+    "CoquiTTS": {
+      "display": "Coqui TTS",
+      "description": "Open-source neural text-to-speech engine",
+      "tag": "✅ Direct Access"
+    },
+    "Bark": {
+      "display": "Bark",
+      "description": "Suno open-source text-to-speech model",
+      "tag": "🔄 Mirror Install"
+    },
+    "CosyVoice": {
+      "display": "CosyVoice",
+      "description": "Alibaba Tongyi voice cloning and synthesis model",
+      "tag": "✅ Direct Access"
+    },
+    "MusicGen": {
+      "display": "MusicGen",
+      "description": "Meta open-source AI music generation model",
+      "tag": "✅ Direct Access"
+    },
+    "RVC": {
+      "display": "RVC",
+      "description": "Real-time voice conversion tool",
+      "tag": "🔄 Mirror Install"
+    },
+    "WhisperX": {
+      "display": "WhisperX",
+      "description": "Accelerated Whisper with speaker diarization",
+      "tag": "🔄 Mirror Install"
+    },
+    "LangFlow": {
+      "display": "LangFlow",
+      "description": "Visual LLM workflow builder platform",
+      "mode_0_name": "Start",
+      "mode_0_desc": "Start LangFlow server",
+      "tag": "✅ Direct Access"
+    },
+    "Flowise": {
+      "display": "Flowise",
+      "description": "Low-code LLM workflow builder platform",
+      "mode_0_name": "Start",
+      "mode_0_desc": "Start Flowise server",
+      "tag": "✅ Direct Access"
+    },
+    "ClawAegis": {
+      "display": "ClawAegis",
+      "description": "AI safety guard and content filter",
+      "tag": "✅ Direct Access"
+    },
+    "LlamaCppPython": {
+      "display": "LlamaCppPython",
+      "description": "Python bindings for C++ Llama inference library",
+      "tag": "✅ Direct Access"
+    },
+    "KimiCLI": {
+      "display": "Kimi CLI",
+      "description": "Moonshot AI Kimi official terminal CLI",
+      "tag": "✅ Direct Access"
+    },
+    "MiniMaxCLI": {
+      "display": "MiniMax CLI",
+      "description": "MiniMax official terminal CLI tool",
+      "tag": "✅ Direct Access"
+    },
+    "FrCli": {
+      "display": "FrCli",
+      "description": "Fanren AI terminal CLI tool",
+      "tag": "✅ Direct Access"
+    },
+    "ZaiSDK": {
+      "display": "ZaiSDK",
+      "description": "Zhipu AI official Python SDK",
+      "tag": "✅ Direct Access"
+    },
+    "AskPy": {
+      "display": "AskPy",
+      "description": "AI command-line Q&A tool",
+      "tag": "✅ Direct Access"
+    },
+    "BaichuanCLI": {
+      "display": "BaichuanCLI",
+      "description": "Baichuan Intelligence official terminal CLI",
+      "tag": "✅ Direct Access"
+    },
+    "DeepSeekSDK": {
+      "display": "DeepSeek SDK",
+      "description": "DeepSeek official Python SDK",
+      "tag": "✅ Direct Access"
+    },
+    "TongyiSDK": {
+      "display": "TongyiSDK",
+      "description": "Alibaba Tongyi Qwen official DashScope SDK",
+      "tag": "✅ Direct Access"
+    },
+    "CodeQL": {
+      "display": "CodeQL",
+      "description": "GitHub code security analysis engine",
+      "tag": "✅ Direct Access"
+    },
+    "Semgrep": {
+      "display": "Semgrep",
+      "description": "Lightweight static code security analysis",
+      "tag": "✅ Direct Access"
+    },
+    "Bearer": {
+      "display": "Bearer",
+      "description": "AI code security audit and privacy analysis",
+      "tag": "✅ Direct Access"
+    },
+    "n8n": {
+      "display": "n8n",
+      "description": "Open-source workflow automation platform",
+      "mode_0_name": "Start",
+      "mode_0_desc": "Start n8n server",
+      "tag": "✅ Direct Access"
+    },
+    "AutoGPT": {
+      "display": "AutoGPT",
+      "description": "Autonomous AI agent for completing tasks",
+      "tag": "✅ Direct Access"
+    },
+    "Airflow": {
+      "display": "Apache Airflow",
+      "description": "Open-source workflow scheduling platform",
+      "tag": "✅ Direct Access"
+    },
+    "OpenHuman": {
+      "display": "OpenHuman",
+      "description": "Open-source desktop AI agent, 118+ integrations, memory tree",
+      "mode_0_name": "Desktop",
+      "mode_0_desc": "Start desktop AI assistant",
+      "tag": "✅ Direct Access"
+    },
+    "HermesAgent": {
+      "display": "Hermes Agent",
+      "description": "Autonomous AI agent, persistent memory, auto skill generation",
+      "mode_0_name": "Terminal",
+      "mode_0_desc": "Start Hermes agent",
+      "tag": "🔄 Mirror Install"
+    }
+  }
+}

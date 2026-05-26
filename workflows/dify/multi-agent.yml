@@ -1,0 +1,24 @@
+app:
+  name: "多Agent协作"
+  mode: advanced-chat
+  description: "多个AI Agent分工协作：研究员搜集信息→分析师整理→写作者输出。适合深度报告、市场分析"
+agents:
+  - name: researcher
+    role: "信息搜集员"
+    prompt: "你是一个研究员，负责搜集和整理关于{query}的相关信息。请尽可能全面地列出关键事实和数据。"
+    tools: ["web_search"]
+  - name: analyst
+    role: "数据分析师"
+    prompt: "你是一个数据分析师，根据研究员提供的信息进行深入分析，找出趋势、问题和机会。"
+  - name: writer
+    role: "报告写作者"
+    prompt: "你是一个专业报告写作者，根据分析结果撰写结构清晰的报告。包括：摘要、背景、分析、结论、建议。"
+workflow:
+  type: sequential
+  steps:
+    - agent: researcher
+    - agent: analyst
+      input: "{{researcher.output}}"
+    - agent: writer
+      input: "研究员发现:\n{{researcher.output}}\n\n分析结果:\n{{analyst.output}}"
+author: AgentHub-U

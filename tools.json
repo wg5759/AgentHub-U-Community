@@ -1,0 +1,2503 @@
+{
+  "agents": {
+    "OpenCode": {
+      "name": "OpenCode",
+      "display_key": "OpenCode",
+      "category_key": "coding",
+      "requires": [
+        "node"
+      ],
+      "install_cmd": [
+        "npm",
+        "install",
+        "-g",
+        "opencode-ai"
+      ],
+      "uninstall_cmd": [
+        "npm",
+        "uninstall",
+        "-g",
+        "opencode-ai"
+      ],
+      "launch_cmd": "opencode",
+      "launch_url": "http://localhost:53222/",
+      "check_type": "binary",
+      "check_name": "opencode",
+      "launch_modes": [
+        {
+          "mode_key": "OpenCode_mode_0",
+          "name": "终端模式 | Terminal",
+          "cmd": "opencode"
+        },
+        {
+          "mode_key": "OpenCode_mode_1",
+          "name": "网页端 | Web UI",
+          "cmd": "opencode web --hostname 127.0.0.1 --port 53222"
+        },
+        {
+          "mode_key": "OpenCode_mode_2",
+          "name": "桌面端 | Desktop",
+          "cmd": "opencode"
+        }
+      ],
+      "price": 0,
+      "price_enabled": false,
+      "is_free": true,
+      "requires_api_key": false
+    },
+    "OpenClaw": {
+      "name": "OpenClaw",
+      "display_key": "OpenClaw",
+      "category_key": "coding",
+      "requires": [
+        "node"
+      ],
+      "install_cmd": [
+        "npm",
+        "install",
+        "-g",
+        "openclaw@latest"
+      ],
+      "uninstall_cmd": [
+        "npm",
+        "uninstall",
+        "-g",
+        "openclaw"
+      ],
+      "launch_cmd": "openclaw chat",
+      "launch_url": "",
+      "check_type": "binary",
+      "check_name": "openclaw",
+      "launch_modes": [
+        {
+          "mode_key": "OpenClaw_mode_0",
+          "cmd": "openclaw chat"
+        },
+        {
+          "mode_key": "OpenClaw_mode_1",
+          "cmd": "openclaw web"
+        }
+      ],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "ClaudeCode": {
+      "name": "ClaudeCode",
+      "display_key": "ClaudeCode",
+      "category_key": "coding",
+      "requires": [
+        "node"
+      ],
+      "install_cmd": [
+        "npm",
+        "install",
+        "-g",
+        "@anthropic-ai/claude-code"
+      ],
+      "uninstall_cmd": [
+        "npm",
+        "uninstall",
+        "-g",
+        "@anthropic-ai/claude-code"
+      ],
+      "launch_cmd": "claude",
+      "launch_url": "",
+      "check_type": "binary",
+      "check_name": "claude",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": true,
+      "api_key_env": "ANTHROPIC_API_KEY"
+    },
+    "Codex": {
+      "name": "Codex",
+      "display_key": "Codex",
+      "category_key": "coding",
+      "requires": [
+        "node"
+      ],
+      "install_cmd": [
+        "npm",
+        "install",
+        "-g",
+        "@openai/codex"
+      ],
+      "uninstall_cmd": [
+        "npm",
+        "uninstall",
+        "-g",
+        "@openai/codex"
+      ],
+      "launch_cmd": "codex",
+      "launch_url": "",
+      "check_type": "binary",
+      "check_name": "codex",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": true,
+      "api_key_env": "OPENAI_API_KEY"
+    },
+    "Aider": {
+      "name": "Aider",
+      "display_key": "Aider",
+      "category_key": "coding",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "aider-chat"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "aider-chat"
+      ],
+      "launch_cmd": "aider",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "aider-chat",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": true,
+      "api_key_env": "OPENAI_API_KEY"
+    },
+    "OpenInterpreter": {
+      "name": "OpenInterpreter",
+      "display_key": "OpenInterpreter",
+      "category_key": "coding",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "open-interpreter"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "open-interpreter"
+      ],
+      "launch_cmd": "interpreter",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "open-interpreter",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": true,
+      "api_key_env": "OPENAI_API_KEY"
+    },
+    "GeminiCLI": {
+      "name": "GeminiCLI",
+      "display_key": "GeminiCLI",
+      "category_key": "coding",
+      "requires": [
+        "node"
+      ],
+      "install_cmd": [
+        "npm",
+        "install",
+        "-g",
+        "@google-gemini/cli"
+      ],
+      "uninstall_cmd": [
+        "npm",
+        "uninstall",
+        "-g",
+        "@google-gemini/cli"
+      ],
+      "launch_cmd": "gemini",
+      "launch_url": "",
+      "check_type": "binary",
+      "check_name": "gemini",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": true,
+      "api_key_env": "GEMINI_API_KEY"
+    },
+    "Cline": {
+      "name": "Cline",
+      "display_key": "Cline",
+      "category_key": "coding",
+      "requires": [
+        "node"
+      ],
+      "install_cmd": [
+        "npm",
+        "install",
+        "-g",
+        "@cline/cli"
+      ],
+      "uninstall_cmd": [
+        "npm",
+        "uninstall",
+        "-g",
+        "@cline/cli"
+      ],
+      "launch_cmd": "cline",
+      "launch_url": "",
+      "check_type": "binary",
+      "check_name": "cline",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": true,
+      "api_key_env": "ANTHROPIC_API_KEY"
+    },
+    "CursorCLI": {
+      "name": "CursorCLI",
+      "display_key": "CursorCLI",
+      "category_key": "coding",
+      "requires": [
+        "node"
+      ],
+      "install_cmd": [
+        "npm",
+        "install",
+        "-g",
+        "@cursorai/cli"
+      ],
+      "uninstall_cmd": [
+        "npm",
+        "uninstall",
+        "-g",
+        "@cursorai/cli"
+      ],
+      "launch_cmd": "cursor",
+      "launch_url": "",
+      "check_type": "binary",
+      "check_name": "cursor",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": true,
+      "api_key_env": "OPENAI_API_KEY"
+    },
+    "Goose": {
+      "name": "Goose",
+      "display_key": "Goose",
+      "category_key": "coding",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "goose-ai"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "goose-ai"
+      ],
+      "launch_cmd": "goose",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "goose-ai",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": true,
+      "api_key_env": "OPENAI_API_KEY"
+    },
+    "MistralVibe": {
+      "name": "MistralVibe",
+      "display_key": "MistralVibe",
+      "category_key": "coding",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "mistral-vibe"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "mistral-vibe"
+      ],
+      "launch_cmd": "mistral-vibe",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "mistral-vibe",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": true,
+      "api_key_env": "MISTRAL_API_KEY"
+    },
+    "QwenCode": {
+      "name": "QwenCode",
+      "display_key": "QwenCode",
+      "category_key": "coding",
+      "requires": [
+        "node"
+      ],
+      "install_cmd": [
+        "npm",
+        "install",
+        "-g",
+        "@qwen/code"
+      ],
+      "uninstall_cmd": [
+        "npm",
+        "uninstall",
+        "-g",
+        "@qwen/code"
+      ],
+      "launch_cmd": "qwen",
+      "launch_url": "",
+      "check_type": "binary",
+      "check_name": "qwen",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": true,
+      "api_key_env": "DASHSCOPE_API_KEY"
+    },
+    "Continue": {
+      "name": "Continue",
+      "display_key": "Continue",
+      "category_key": "coding",
+      "requires": [
+        "node"
+      ],
+      "install_cmd": [
+        "npm",
+        "install",
+        "-g",
+        "@continuedev/continue"
+      ],
+      "uninstall_cmd": [
+        "npm",
+        "uninstall",
+        "-g",
+        "@continuedev/continue"
+      ],
+      "launch_cmd": "continue",
+      "launch_url": "",
+      "check_type": "binary",
+      "check_name": "continue",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": true,
+      "api_key_env": "OPENAI_API_KEY"
+    },
+    "Tabby": {
+      "name": "Tabby",
+      "display_key": "Tabby",
+      "category_key": "coding",
+      "requires": [
+        "node"
+      ],
+      "install_cmd": [
+        "npm",
+        "install",
+        "-g",
+        "tabby-agent"
+      ],
+      "uninstall_cmd": [
+        "npm",
+        "uninstall",
+        "-g",
+        "tabby-agent"
+      ],
+      "launch_cmd": "tabby-agent",
+      "launch_url": "",
+      "check_type": "binary",
+      "check_name": "tabby-agent",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "Ollama": {
+      "name": "Ollama",
+      "display_key": "Ollama",
+      "category_key": "chat",
+      "requires": [],
+      "install_cmd": [
+        "ollama",
+        "serve"
+      ],
+      "uninstall_cmd": [],
+      "launch_cmd": "ollama run llama3.3",
+      "launch_url": "http://localhost:11434/",
+      "check_type": "binary",
+      "check_name": "ollama",
+      "launch_modes": [
+        {
+          "mode_key": "Ollama_mode_0",
+          "cmd": "ollama serve"
+        },
+        {
+          "mode_key": "Ollama_mode_1",
+          "cmd": "ollama run llama3.3"
+        }
+      ],
+      "price": 0,
+      "price_enabled": false,
+      "is_free": true,
+      "requires_api_key": false
+    },
+    "Hermes": {
+      "name": "Hermes",
+      "display_key": "Hermes",
+      "category_key": "chat",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "hermes-agent"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "hermes-agent"
+      ],
+      "launch_cmd": "hermes",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "hermes-agent",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "Dify": {
+      "name": "Dify",
+      "display_key": "Dify",
+      "category_key": "chat",
+      "requires": [
+        "docker"
+      ],
+      "install_cmd": [
+        "git",
+        "clone",
+        "https://github.com/langgenius/dify.git",
+        "~/AgentHub/dify"
+      ],
+      "uninstall_cmd": [
+        "cmd",
+        "/c",
+        "rmdir",
+        "/s",
+        "/q",
+        "~/AgentHub/dify"
+      ],
+      "launch_cmd": "cd ~/AgentHub/dify && docker compose up -d",
+      "launch_url": "http://localhost:3000/",
+      "check_type": "dir",
+      "check_name": "~/AgentHub/dify",
+      "launch_modes": [
+        {
+          "mode_key": "Dify_mode_0",
+          "cmd": "cd ~/AgentHub/dify && docker compose up -d"
+        },
+        {
+          "mode_key": "Dify_mode_1",
+          "cmd": "cd ~/AgentHub/dify && docker compose down"
+        }
+      ],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "OpenWebUI": {
+      "name": "OpenWebUI",
+      "display_key": "OpenWebUI",
+      "category_key": "chat",
+      "requires": [
+        "docker"
+      ],
+      "install_cmd": [
+        "git",
+        "clone",
+        "https://github.com/open-webui/open-webui.git",
+        "~/AgentHub/open-webui"
+      ],
+      "uninstall_cmd": [
+        "cmd",
+        "/c",
+        "rmdir",
+        "/s",
+        "/q",
+        "~/AgentHub/open-webui"
+      ],
+      "launch_cmd": "cd ~/AgentHub/open-webui && docker compose up -d",
+      "launch_url": "http://localhost:3000/",
+      "check_type": "dir",
+      "check_name": "~/AgentHub/open-webui",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "LobeChat": {
+      "name": "LobeChat",
+      "display_key": "LobeChat",
+      "category_key": "chat",
+      "requires": [
+        "docker"
+      ],
+      "install_cmd": [
+        "git",
+        "clone",
+        "https://github.com/lobehub/lobe-chat.git",
+        "~/AgentHub/lobe-chat"
+      ],
+      "uninstall_cmd": [
+        "cmd",
+        "/c",
+        "rmdir",
+        "/s",
+        "/q",
+        "~/AgentHub/lobe-chat"
+      ],
+      "launch_cmd": "cd ~/AgentHub/lobe-chat && docker compose up -d",
+      "launch_url": "http://localhost:3210/",
+      "check_type": "dir",
+      "check_name": "~/AgentHub/lobe-chat",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "NextChat": {
+      "name": "NextChat",
+      "display_key": "NextChat",
+      "category_key": "chat",
+      "requires": [
+        "docker"
+      ],
+      "install_cmd": [
+        "git",
+        "clone",
+        "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web.git",
+        "~/AgentHub/nextchat"
+      ],
+      "uninstall_cmd": [
+        "cmd",
+        "/c",
+        "rmdir",
+        "/s",
+        "/q",
+        "~/AgentHub/nextchat"
+      ],
+      "launch_cmd": "cd ~/AgentHub/nextchat && docker compose up -d",
+      "launch_url": "http://localhost:3000/",
+      "check_type": "dir",
+      "check_name": "~/AgentHub/nextchat",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "LangChain": {
+      "name": "LangChain",
+      "display_key": "LangChain",
+      "category_key": "framework",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "langchain"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "langchain"
+      ],
+      "launch_cmd": "echo 'LangChain is a framework — use from langchain import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "langchain",
+      "launch_modes": [],
+      "price": 0,
+      "price_enabled": false,
+      "is_free": true,
+      "requires_api_key": false
+    },
+    "CrewAI": {
+      "name": "CrewAI",
+      "display_key": "CrewAI",
+      "category_key": "framework",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "crewai"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "crewai"
+      ],
+      "launch_cmd": "echo 'CrewAI is a framework — use from crewai import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "crewai",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "AutoGen": {
+      "name": "AutoGen",
+      "display_key": "AutoGen",
+      "category_key": "framework",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "autogen-agentchat"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "autogen-agentchat"
+      ],
+      "launch_cmd": "echo 'AutoGen is a framework — use from autogen import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "autogen-agentchat",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "AG2": {
+      "name": "AG2",
+      "display_key": "AG2",
+      "category_key": "framework",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "ag2"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "ag2"
+      ],
+      "launch_cmd": "echo 'AG2 is a framework — use from ag2 import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "ag2",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "LlamaIndex": {
+      "name": "LlamaIndex",
+      "display_key": "LlamaIndex",
+      "category_key": "framework",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "llama-index"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "llama-index"
+      ],
+      "launch_cmd": "echo 'LlamaIndex is a framework — use from llama_index import ...'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "llama-index",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "Haystack": {
+      "name": "Haystack",
+      "display_key": "Haystack",
+      "category_key": "framework",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "haystack-ai"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "haystack-ai"
+      ],
+      "launch_cmd": "echo 'Haystack is a framework — see haystack.deepset.ai'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "haystack-ai",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "Phidata": {
+      "name": "Phidata",
+      "display_key": "Phidata",
+      "category_key": "framework",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "phidata"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "phidata"
+      ],
+      "launch_cmd": "echo 'Phidata is a framework — use from phi import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "phidata",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "OpenAIAgentsSDK": {
+      "name": "OpenAIAgentsSDK",
+      "display_key": "OpenAIAgentsSDK",
+      "category_key": "framework",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "openai-agents"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "openai-agents"
+      ],
+      "launch_cmd": "echo 'OpenAI Agents SDK — use from agents import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "openai-agents",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "LangGraph": {
+      "name": "LangGraph",
+      "display_key": "LangGraph",
+      "category_key": "framework",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "langgraph"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "langgraph"
+      ],
+      "launch_cmd": "echo 'LangGraph is a framework — use from langgraph import ...'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "langgraph",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "MetaGPT": {
+      "name": "MetaGPT",
+      "display_key": "MetaGPT",
+      "category_key": "framework",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "metagpt"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "metagpt"
+      ],
+      "launch_cmd": "echo 'MetaGPT is a framework — use from metagpt import ...'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "metagpt",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "Mastra": {
+      "name": "Mastra",
+      "display_key": "Mastra",
+      "category_key": "framework",
+      "requires": [
+        "node"
+      ],
+      "install_cmd": [
+        "npm",
+        "install",
+        "-g",
+        "@mastra/core"
+      ],
+      "uninstall_cmd": [
+        "npm",
+        "uninstall",
+        "-g",
+        "@mastra/core"
+      ],
+      "launch_cmd": "echo 'Mastra is a framework — use in Node.js projects'",
+      "launch_url": "",
+      "check_type": "binary",
+      "check_name": "mastra",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "SemanticKernel": {
+      "name": "SemanticKernel",
+      "display_key": "SemanticKernel",
+      "category_key": "framework",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "semantic-kernel"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "semantic-kernel"
+      ],
+      "launch_cmd": "echo 'Semantic Kernel is a framework — use from semantic_kernel import ...'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "semantic-kernel",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "Gradio": {
+      "name": "Gradio",
+      "display_key": "Gradio",
+      "category_key": "framework",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "gradio"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "gradio"
+      ],
+      "launch_cmd": "python3 -c 'import gradio; gradio.close_all()'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "gradio",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "DSPy": {
+      "name": "DSPy",
+      "display_key": "DSPy",
+      "category_key": "framework",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "dspy-ai"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "dspy-ai"
+      ],
+      "launch_cmd": "echo 'DSPy is a framework — use from dspy import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "dspy-ai",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "ChromaDB": {
+      "name": "ChromaDB",
+      "display_key": "ChromaDB",
+      "category_key": "data",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "chromadb"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "chromadb"
+      ],
+      "launch_cmd": "python3 -m chromadb run --path ./chroma_data",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "chromadb",
+      "launch_modes": [],
+      "price": 0,
+      "price_enabled": false,
+      "is_free": true,
+      "requires_api_key": false
+    },
+    "Mem0": {
+      "name": "Mem0",
+      "display_key": "Mem0",
+      "category_key": "data",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "mem0ai"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "mem0ai"
+      ],
+      "launch_cmd": "echo 'Mem0 is a library — use from mem0 import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "mem0ai",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "Qdrant": {
+      "name": "Qdrant",
+      "display_key": "Qdrant",
+      "category_key": "data",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "qdrant-client"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "qdrant-client"
+      ],
+      "launch_cmd": "echo 'Qdrant — use from qdrant_client import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "qdrant-client",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "Weaviate": {
+      "name": "Weaviate",
+      "display_key": "Weaviate",
+      "category_key": "data",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "weaviate-client"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "weaviate-client"
+      ],
+      "launch_cmd": "echo 'Weaviate — use from weaviate import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "weaviate-client",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "MilvusLite": {
+      "name": "MilvusLite",
+      "display_key": "MilvusLite",
+      "category_key": "data",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "pymilvus"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "pymilvus"
+      ],
+      "launch_cmd": "echo 'Milvus Lite — use from pymilvus import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "pymilvus",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "Unstructured": {
+      "name": "Unstructured",
+      "display_key": "Unstructured",
+      "category_key": "data",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "unstructured"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "unstructured"
+      ],
+      "launch_cmd": "echo 'Unstructured — use from unstructured import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "unstructured",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "NeMoGuardrails": {
+      "name": "NeMoGuardrails",
+      "display_key": "NeMoGuardrails",
+      "category_key": "data",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "nemoguardrails"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "nemoguardrails"
+      ],
+      "launch_cmd": "echo 'NeMo Guardrails — use from nemoguardrails import ...'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "nemoguardrails",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "Guardrails": {
+      "name": "Guardrails",
+      "display_key": "Guardrails",
+      "category_key": "data",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "guardrails-ai"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "guardrails-ai"
+      ],
+      "launch_cmd": "echo 'Guardrails — use from guardrails import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "guardrails-ai",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "txtai": {
+      "name": "txtai",
+      "display_key": "txtai",
+      "category_key": "data",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "txtai"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "txtai"
+      ],
+      "launch_cmd": "echo 'txtai — use from txtai import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "txtai",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "LanceDB": {
+      "name": "LanceDB",
+      "display_key": "LanceDB",
+      "category_key": "data",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "lancedb"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "lancedb"
+      ],
+      "launch_cmd": "echo 'LanceDB — use from lancedb import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "lancedb",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "Docling": {
+      "name": "Docling",
+      "display_key": "Docling",
+      "category_key": "data",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "docling"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "docling"
+      ],
+      "launch_cmd": "echo 'Docling — use from docling import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "docling",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "ComfyUI": {
+      "name": "ComfyUI",
+      "display_key": "ComfyUI",
+      "category_key": "drawing",
+      "requires": [
+        "git",
+        "python3"
+      ],
+      "install_cmd": [
+        "git",
+        "clone",
+        "https://github.com/comfyanonymous/ComfyUI.git",
+        "~/AgentHub/ComfyUI"
+      ],
+      "uninstall_cmd": [
+        "cmd",
+        "/c",
+        "rmdir",
+        "/s",
+        "/q",
+        "~/AgentHub/ComfyUI"
+      ],
+      "launch_cmd": "cd ~/AgentHub/ComfyUI && python3 main.py",
+      "launch_url": "http://localhost:8188/",
+      "check_type": "dir",
+      "check_name": "~/AgentHub/ComfyUI",
+      "launch_modes": [
+        {
+          "mode_key": "ComfyUI_mode_0",
+          "cmd": "cd ~/AgentHub/ComfyUI && python3 main.py"
+        },
+        {
+          "mode_key": "ComfyUI_mode_1",
+          "cmd": "cd ~/AgentHub/ComfyUI && python3 main.py --lowvram"
+        }
+      ],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "SDWebUI": {
+      "name": "SDWebUI",
+      "display_key": "SDWebUI",
+      "category_key": "drawing",
+      "requires": [
+        "git",
+        "python3"
+      ],
+      "install_cmd": [
+        "git",
+        "clone",
+        "https://github.com/AUTOMATIC1111/stable-diffusion-webui.git",
+        "~/AgentHub/sd-webui"
+      ],
+      "uninstall_cmd": [
+        "cmd",
+        "/c",
+        "rmdir",
+        "/s",
+        "/q",
+        "~/AgentHub/sd-webui"
+      ],
+      "launch_cmd": "cd ~/AgentHub/sd-webui && python3 launch.py",
+      "launch_url": "http://localhost:7860/",
+      "check_type": "dir",
+      "check_name": "~/AgentHub/sd-webui",
+      "launch_modes": [
+        {
+          "mode_key": "SDWebUI_mode_0",
+          "cmd": "cd ~/AgentHub/sd-webui && python3 launch.py"
+        },
+        {
+          "mode_key": "SDWebUI_mode_1",
+          "cmd": "cd ~/AgentHub/sd-webui && python3 launch.py --share"
+        }
+      ],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "InvokeAI": {
+      "name": "InvokeAI",
+      "display_key": "InvokeAI",
+      "category_key": "drawing",
+      "requires": [
+        "git",
+        "python3"
+      ],
+      "install_cmd": [
+        "git",
+        "clone",
+        "https://github.com/invoke-ai/InvokeAI.git",
+        "~/AgentHub/InvokeAI"
+      ],
+      "uninstall_cmd": [
+        "cmd",
+        "/c",
+        "rmdir",
+        "/s",
+        "/q",
+        "~/AgentHub/InvokeAI"
+      ],
+      "launch_cmd": "cd ~/AgentHub/InvokeAI && python3 invoke.py",
+      "launch_url": "http://localhost:9090/",
+      "check_type": "dir",
+      "check_name": "~/AgentHub/InvokeAI",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "Fooocus": {
+      "name": "Fooocus",
+      "display_key": "Fooocus",
+      "category_key": "drawing",
+      "requires": [
+        "git",
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "fooocus"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "fooocus"
+      ],
+      "launch_cmd": "python3 -m fooocus",
+      "launch_url": "http://localhost:7865/",
+      "check_type": "pip",
+      "check_name": "fooocus",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "AnimateDiff": {
+      "name": "AnimateDiff",
+      "display_key": "AnimateDiff",
+      "category_key": "drawing",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "animatediff"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "animatediff"
+      ],
+      "launch_cmd": "echo 'AnimateDiff — use from animatediff import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "animatediff",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "Wan2.1": {
+      "name": "Wan2.1",
+      "display_key": "Wan2.1",
+      "category_key": "video",
+      "requires": [
+        "git",
+        "python3"
+      ],
+      "install_cmd": [
+        "git",
+        "clone",
+        "https://github.com/Wan-Video/Wan2.1.git",
+        "~/AgentHub/Wan2.1"
+      ],
+      "uninstall_cmd": [
+        "cmd",
+        "/c",
+        "rmdir",
+        "/s",
+        "/q",
+        "~/AgentHub/Wan2.1"
+      ],
+      "launch_cmd": "cd ~/AgentHub/Wan2.1 && python3 inference.py",
+      "launch_url": "",
+      "check_type": "dir",
+      "check_name": "~/AgentHub/Wan2.1",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "CogVideoX": {
+      "name": "CogVideoX",
+      "display_key": "CogVideoX",
+      "category_key": "video",
+      "requires": [
+        "git",
+        "python3"
+      ],
+      "install_cmd": [
+        "git",
+        "clone",
+        "https://github.com/THUDM/CogVideo.git",
+        "~/AgentHub/CogVideo"
+      ],
+      "uninstall_cmd": [
+        "cmd",
+        "/c",
+        "rmdir",
+        "/s",
+        "/q",
+        "~/AgentHub/CogVideo"
+      ],
+      "launch_cmd": "cd ~/AgentHub/CogVideo && python3 inference.py",
+      "launch_url": "",
+      "check_type": "dir",
+      "check_name": "~/AgentHub/CogVideo",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "OpenSora": {
+      "name": "OpenSora",
+      "display_key": "OpenSora",
+      "category_key": "video",
+      "requires": [
+        "git",
+        "python3"
+      ],
+      "install_cmd": [
+        "git",
+        "clone",
+        "https://github.com/hpcaitech/Open-Sora.git",
+        "~/AgentHub/Open-Sora"
+      ],
+      "uninstall_cmd": [
+        "cmd",
+        "/c",
+        "rmdir",
+        "/s",
+        "/q",
+        "~/AgentHub/Open-Sora"
+      ],
+      "launch_cmd": "cd ~/AgentHub/Open-Sora && python3 inference.py",
+      "launch_url": "",
+      "check_type": "dir",
+      "check_name": "~/AgentHub/Open-Sora",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "HunyuanVideo": {
+      "name": "HunyuanVideo",
+      "display_key": "HunyuanVideo",
+      "category_key": "video",
+      "requires": [
+        "git",
+        "python3"
+      ],
+      "install_cmd": [
+        "git",
+        "clone",
+        "https://github.com/Tencent/HunyuanVideo.git",
+        "~/AgentHub/HunyuanVideo"
+      ],
+      "uninstall_cmd": [
+        "cmd",
+        "/c",
+        "rmdir",
+        "/s",
+        "/q",
+        "~/AgentHub/HunyuanVideo"
+      ],
+      "launch_cmd": "cd ~/AgentHub/HunyuanVideo && python3 inference.py",
+      "launch_url": "",
+      "check_type": "dir",
+      "check_name": "~/AgentHub/HunyuanVideo",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "StepVideo": {
+      "name": "StepVideo",
+      "display_key": "StepVideo",
+      "category_key": "video",
+      "requires": [
+        "git",
+        "python3"
+      ],
+      "install_cmd": [
+        "git",
+        "clone",
+        "https://github.com/stepfun-ai/Step-Video-T2V.git",
+        "~/AgentHub/Step-Video-T2V"
+      ],
+      "uninstall_cmd": [
+        "cmd",
+        "/c",
+        "rmdir",
+        "/s",
+        "/q",
+        "~/AgentHub/Step-Video-T2V"
+      ],
+      "launch_cmd": "cd ~/AgentHub/Step-Video-T2V && python3 inference.py",
+      "launch_url": "",
+      "check_type": "dir",
+      "check_name": "~/AgentHub/Step-Video-T2V",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "Whisper": {
+      "name": "Whisper",
+      "display_key": "Whisper",
+      "category_key": "audio",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "openai-whisper"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "openai-whisper"
+      ],
+      "launch_cmd": "whisper --help",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "openai-whisper",
+      "launch_modes": [],
+      "price": 0,
+      "price_enabled": false,
+      "is_free": true,
+      "requires_api_key": false
+    },
+    "FunASR": {
+      "name": "FunASR",
+      "display_key": "FunASR",
+      "category_key": "audio",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "funasr"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "funasr"
+      ],
+      "launch_cmd": "echo 'FunASR — use from funasr import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "funasr",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "CoquiTTS": {
+      "name": "CoquiTTS",
+      "display_key": "CoquiTTS",
+      "category_key": "audio",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "coqui-tts"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "coqui-tts"
+      ],
+      "launch_cmd": "tts --help",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "coqui-tts",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "Bark": {
+      "name": "Bark",
+      "display_key": "Bark",
+      "category_key": "audio",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "suno-bark"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "suno-bark"
+      ],
+      "launch_cmd": "echo 'Bark — use from bark import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "suno-bark",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "CosyVoice": {
+      "name": "CosyVoice",
+      "display_key": "CosyVoice",
+      "category_key": "audio",
+      "requires": [
+        "git",
+        "python3"
+      ],
+      "install_cmd": [
+        "git",
+        "clone",
+        "https://github.com/FunAudioLLM/CosyVoice.git",
+        "~/AgentHub/CosyVoice"
+      ],
+      "uninstall_cmd": [
+        "cmd",
+        "/c",
+        "rmdir",
+        "/s",
+        "/q",
+        "~/AgentHub/CosyVoice"
+      ],
+      "launch_cmd": "cd ~/AgentHub/CosyVoice && python3 webui.py",
+      "launch_url": "",
+      "check_type": "dir",
+      "check_name": "~/AgentHub/CosyVoice",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "MusicGen": {
+      "name": "MusicGen",
+      "display_key": "MusicGen",
+      "category_key": "audio",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "audiocraft"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "audiocraft"
+      ],
+      "launch_cmd": "echo 'MusicGen — use from audiocraft import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "audiocraft",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "RVC": {
+      "name": "RVC",
+      "display_key": "RVC",
+      "category_key": "audio",
+      "requires": [
+        "git",
+        "python3"
+      ],
+      "install_cmd": [
+        "git",
+        "clone",
+        "https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI.git",
+        "~/AgentHub/RVC"
+      ],
+      "uninstall_cmd": [
+        "cmd",
+        "/c",
+        "rmdir",
+        "/s",
+        "/q",
+        "~/AgentHub/RVC"
+      ],
+      "launch_cmd": "cd ~/AgentHub/RVC && python3 webui.py",
+      "launch_url": "http://localhost:7865/",
+      "check_type": "dir",
+      "check_name": "~/AgentHub/RVC",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "WhisperX": {
+      "name": "WhisperX",
+      "display_key": "WhisperX",
+      "category_key": "audio",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "whisperx"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "whisperx"
+      ],
+      "launch_cmd": "whisperx --help",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "whisperx",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "LangFlow": {
+      "name": "LangFlow",
+      "display_key": "LangFlow",
+      "category_key": "deploy",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "langflow"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "langflow"
+      ],
+      "launch_cmd": "langflow run",
+      "launch_url": "http://localhost:7860/",
+      "check_type": "pip",
+      "check_name": "langflow",
+      "launch_modes": [
+        {
+          "mode_key": "LangFlow_mode_0",
+          "cmd": "langflow run"
+        }
+      ],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "Flowise": {
+      "name": "Flowise",
+      "display_key": "Flowise",
+      "category_key": "deploy",
+      "requires": [
+        "node"
+      ],
+      "install_cmd": [
+        "npm",
+        "install",
+        "-g",
+        "flowise"
+      ],
+      "uninstall_cmd": [
+        "npm",
+        "uninstall",
+        "-g",
+        "flowise"
+      ],
+      "launch_cmd": "flowise start",
+      "launch_url": "http://localhost:3000/",
+      "check_type": "binary",
+      "check_name": "flowise",
+      "launch_modes": [
+        {
+          "mode_key": "Flowise_mode_0",
+          "cmd": "flowise start"
+        }
+      ],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "ClawAegis": {
+      "name": "ClawAegis",
+      "display_key": "ClawAegis",
+      "category_key": "deploy",
+      "requires": [
+        "node"
+      ],
+      "install_cmd": [
+        "npm",
+        "install",
+        "-g",
+        "openclaw-aegis"
+      ],
+      "uninstall_cmd": [
+        "npm",
+        "uninstall",
+        "-g",
+        "openclaw-aegis"
+      ],
+      "launch_cmd": "aegis",
+      "launch_url": "",
+      "check_type": "binary",
+      "check_name": "openclaw-aegis",
+      "launch_modes": [],
+      "price": 0,
+      "price_enabled": false,
+      "is_free": true,
+      "requires_api_key": false
+    },
+    "LlamaCppPython": {
+      "name": "LlamaCppPython",
+      "display_key": "LlamaCppPython",
+      "category_key": "deploy",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "llama-cpp-python"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "llama-cpp-python"
+      ],
+      "launch_cmd": "echo 'llama-cpp-python — use from llama_cpp import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "llama-cpp-python",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "KimiCLI": {
+      "name": "KimiCLI",
+      "display_key": "KimiCLI",
+      "category_key": "regional",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "kimi"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "kimi"
+      ],
+      "launch_cmd": "kimi",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "kimi",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": true,
+      "api_key_env": "MOONSHOT_API_KEY"
+    },
+    "MiniMaxCLI": {
+      "name": "MiniMaxCLI",
+      "display_key": "MiniMaxCLI",
+      "category_key": "regional",
+      "requires": [
+        "node"
+      ],
+      "install_cmd": [
+        "npm",
+        "install",
+        "-g",
+        "@minimax/cli"
+      ],
+      "uninstall_cmd": [
+        "npm",
+        "uninstall",
+        "-g",
+        "@minimax/cli"
+      ],
+      "launch_cmd": "minimax",
+      "launch_url": "",
+      "check_type": "binary",
+      "check_name": "minimax",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": true,
+      "api_key_env": "MINIMAX_API_KEY"
+    },
+    "FrCli": {
+      "name": "FrCli",
+      "display_key": "FrCli",
+      "category_key": "regional",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "fr-cli"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "fr-cli"
+      ],
+      "launch_cmd": "fr",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "fr-cli",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": true,
+      "api_key_env": "OPENAI_API_KEY"
+    },
+    "ZaiSDK": {
+      "name": "ZaiSDK",
+      "display_key": "ZaiSDK",
+      "category_key": "regional",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "zhipuai"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "zhipuai"
+      ],
+      "launch_cmd": "echo 'ZhipuAI SDK — use from zhipuai import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "zhipuai",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": true,
+      "api_key_env": "OPENAI_API_KEY"
+    },
+    "AskPy": {
+      "name": "AskPy",
+      "display_key": "AskPy",
+      "category_key": "regional",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "ask-py"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "ask-py"
+      ],
+      "launch_cmd": "ask",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "ask-py",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": true,
+      "api_key_env": "OPENAI_API_KEY"
+    },
+    "BaichuanCLI": {
+      "name": "BaichuanCLI",
+      "display_key": "BaichuanCLI",
+      "category_key": "regional",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "baichuan-cli"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "baichuan-cli"
+      ],
+      "launch_cmd": "baichuan",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "baichuan-cli",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": true,
+      "api_key_env": "BAICHUAN_API_KEY"
+    },
+    "DeepSeekSDK": {
+      "name": "DeepSeekSDK",
+      "display_key": "DeepSeekSDK",
+      "category_key": "regional",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "deepseek"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "deepseek"
+      ],
+      "launch_cmd": "echo 'DeepSeek SDK — use from deepseek import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "deepseek",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": true,
+      "api_key_env": "DEEPSEEK_API_KEY"
+    },
+    "TongyiSDK": {
+      "name": "TongyiSDK",
+      "display_key": "TongyiSDK",
+      "category_key": "regional",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "dashscope"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "dashscope"
+      ],
+      "launch_cmd": "echo 'DashScope SDK — use from dashscope import ... in Python'",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "dashscope",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": true,
+      "api_key_env": "DASHSCOPE_API_KEY"
+    },
+    "CodeQL": {
+      "name": "CodeQL",
+      "display_key": "CodeQL",
+      "category_key": "security",
+      "requires": [
+        "git"
+      ],
+      "install_cmd": [
+        "git",
+        "clone",
+        "https://github.com/github/codeql.git",
+        "~/AgentHub/codeql"
+      ],
+      "uninstall_cmd": [
+        "cmd",
+        "/c",
+        "rmdir",
+        "/s",
+        "/q",
+        "~/AgentHub/codeql"
+      ],
+      "launch_cmd": "echo 'CodeQL — see https://github.com/github/codeql for usage'",
+      "launch_url": "",
+      "check_type": "dir",
+      "check_name": "~/AgentHub/codeql",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": true,
+      "api_key_env": "GITHUB_TOKEN"
+    },
+    "Semgrep": {
+      "name": "Semgrep",
+      "display_key": "Semgrep",
+      "category_key": "security",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "semgrep"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "semgrep"
+      ],
+      "launch_cmd": "semgrep --help",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "semgrep",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "Bearer": {
+      "name": "Bearer",
+      "display_key": "Bearer",
+      "category_key": "security",
+      "requires": [
+        "git"
+      ],
+      "install_cmd": [
+        "git",
+        "clone",
+        "https://github.com/Bearer/bearer.git",
+        "~/AgentHub/bearer"
+      ],
+      "uninstall_cmd": [
+        "cmd",
+        "/c",
+        "rmdir",
+        "/s",
+        "/q",
+        "~/AgentHub/bearer"
+      ],
+      "launch_cmd": "echo 'Bearer — see https://github.com/Bearer/bearer for usage'",
+      "launch_url": "",
+      "check_type": "dir",
+      "check_name": "~/AgentHub/bearer",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "n8n": {
+      "name": "n8n",
+      "display_key": "n8n",
+      "category_key": "automation",
+      "requires": [
+        "node"
+      ],
+      "install_cmd": [
+        "npm",
+        "install",
+        "-g",
+        "n8n"
+      ],
+      "uninstall_cmd": [
+        "npm",
+        "uninstall",
+        "-g",
+        "n8n"
+      ],
+      "launch_cmd": "n8n start",
+      "launch_url": "http://localhost:5678/",
+      "check_type": "binary",
+      "check_name": "n8n",
+      "launch_modes": [
+        {
+          "mode_key": "n8n_mode_0",
+          "cmd": "n8n start"
+        }
+      ],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "AutoGPT": {
+      "name": "AutoGPT",
+      "display_key": "AutoGPT",
+      "category_key": "automation",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "agpt"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "agpt"
+      ],
+      "launch_cmd": "agpt",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "agpt",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": true,
+      "api_key_env": "OPENAI_API_KEY"
+    },
+    "Airflow": {
+      "name": "Airflow",
+      "display_key": "Airflow",
+      "category_key": "automation",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "apache-airflow"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "apache-airflow"
+      ],
+      "launch_cmd": "airflow standalone",
+      "launch_url": "http://localhost:8080/",
+      "check_type": "pip",
+      "check_name": "apache-airflow",
+      "launch_modes": [],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": false
+    },
+    "OpenHuman": {
+      "name": "OpenHuman",
+      "display_key": "OpenHuman",
+      "category_key": "coding",
+      "requires": [
+        "node"
+      ],
+      "install_cmd": [
+        "npm",
+        "install",
+        "-g",
+        "openhuman"
+      ],
+      "uninstall_cmd": [
+        "npm",
+        "uninstall",
+        "-g",
+        "openhuman"
+      ],
+      "launch_cmd": "openhuman",
+      "launch_url": "http://localhost:31415/",
+      "check_type": "binary",
+      "check_name": "openhuman",
+      "launch_modes": [
+        {
+          "mode_key": "OpenHuman_mode_0",
+          "cmd": "openhuman"
+        }
+      ],
+      "price": 0,
+      "price_enabled": false,
+      "is_free": true,
+      "requires_api_key": false
+    },
+    "HermesAgent": {
+      "name": "HermesAgent",
+      "display_key": "HermesAgent",
+      "category_key": "automation",
+      "requires": [
+        "python3"
+      ],
+      "install_cmd": [
+        "pip3",
+        "install",
+        "hermes-agent"
+      ],
+      "uninstall_cmd": [
+        "pip3",
+        "uninstall",
+        "-y",
+        "hermes-agent"
+      ],
+      "launch_cmd": "hermes",
+      "launch_url": "",
+      "check_type": "pip",
+      "check_name": "hermes-agent",
+      "launch_modes": [
+        {
+          "mode_key": "HermesAgent_mode_0",
+          "cmd": "hermes"
+        }
+      ],
+      "price": 49,
+      "price_enabled": true,
+      "is_free": false,
+      "requires_api_key": true,
+      "api_key_env": "ANTHROPIC_API_KEY"
+    }
+  }
+}

@@ -1,0 +1,466 @@
+{
+  "categories": {
+    "coding": "コーディング",
+    "chat": "チャット",
+    "framework": "フレームワーク",
+    "data": "データツール",
+    "drawing": "描画・クリエイティブ",
+    "video": "動画生成",
+    "audio": "音声・オーディオ",
+    "deploy": "デプロイ",
+    "regional": "リージョナルAI",
+    "security": "セキュリティ",
+    "automation": "オートメーション"
+  },
+  "tools": {
+    "OpenCode": {
+      "display": "OpenCode",
+      "description": "マルチモデル対応のターミナルAIコーディングアシスタント",
+      "mode_0_name": "Terminal",
+      "mode_0_desc": "新しいウィンドウでターミナル版を実行",
+      "mode_1_name": "Web UI",
+      "mode_1_desc": "Webサーバーを起動",
+      "tag": "✅ 直接入力"
+    },
+    "OpenClaw": {
+      "display": "OpenClaw",
+      "description": "ターミナルで動作するAIコーディングアシスタント",
+      "mode_0_name": "Chat",
+      "mode_0_desc": "チャットを開始",
+      "mode_1_name": "Web UI",
+      "mode_1_desc": "Webサーバーを起動",
+      "tag": "✅ 直接入力"
+    },
+    "ClaudeCode": {
+      "display": "Claude Code プログラミングAI",
+      "description": "Anthropic公式コーディングエージェント",
+      "tag": "🔄 ミラーインストール"
+    },
+    "Codex": {
+      "display": "OpenAI Codex CLI",
+      "description": "OpenAI公式のターミナルコーディングエージェント",
+      "tag": "🔄 ミラーインストール"
+    },
+    "Aider": {
+      "display": "Aider ペアプログラミング",
+      "description": "ターミナルで動作するAIペアプログラミングツール",
+      "tag": "✅ 直接入力"
+    },
+    "OpenInterpreter": {
+      "display": "OpenInterpreter",
+      "description": "コンピュータを自然言語で操作するオープンソースコーディングエージェント",
+      "tag": "✅ 直接入力"
+    },
+    "GeminiCLI": {
+      "display": "Gemini CLI ツール",
+      "description": "Google Gemini公式CLIツール",
+      "tag": "🔄 ミラーインストール"
+    },
+    "Cline": {
+      "display": "Cline 自律開発AI",
+      "description": "自律的な開発を実現するターミナルAIコーディングエージェント",
+      "tag": "🔄 ミラーインストール"
+    },
+    "CursorCLI": {
+      "display": "Cursor ターミナルCLI",
+      "description": "CursorエディタのターミナルAIインターフェース",
+      "tag": "🔄 ミラーインストール"
+    },
+    "Goose": {
+      "display": "Goose",
+      "description": "Block社のオープンソースAIコーディングエージェント",
+      "tag": "✅ 直接入力"
+    },
+    "MistralVibe": {
+      "display": "Mistral Vibe コーディング",
+      "description": "Mistral AIのターミナルコーディングエージェント",
+      "tag": "🔄 ミラーインストール"
+    },
+    "QwenCode": {
+      "display": "QwenCode",
+      "description": "Alibaba Qwen公式コーディングCLI",
+      "tag": "✅ 直接入力"
+    },
+    "Continue": {
+      "display": "Continue",
+      "description": "IDE向けオープンソースAIコーディングアシスタント",
+      "tag": "🔄 ミラーインストール"
+    },
+    "Tabby": {
+      "display": "Tabby",
+      "description": "セルフホスト型AIコーディングアシスタント（コード補完機能付き）",
+      "tag": "🔄 ミラーインストール"
+    },
+    "Ollama": {
+      "display": "Ollama",
+      "description": "ローカルでLLMを実行、プライベート・オフライン対応",
+      "mode_0_name": "Server",
+      "mode_0_desc": "Ollama サーバーを起動",
+      "mode_1_name": "Run",
+      "mode_1_desc": "llama3.3 モデルを実行",
+      "tag": "✅ 直接入力"
+    },
+    "Hermes": {
+      "display": "Hermes",
+      "description": "ターミナル向け汎用AIエージェントフレームワーク",
+      "tag": "✅ 直接入力"
+    },
+    "Dify": {
+      "display": "Dify AI構築プラットフォーム",
+      "description": "ドラッグ＆ドロップでAIアプリを構築できるビジュアルプラットフォーム",
+      "mode_0_name": "Start",
+      "mode_0_desc": "Dify サービスを起動",
+      "mode_1_name": "Stop",
+      "mode_1_desc": "Dify サービスを停止",
+      "tag": "🔄 ミラーインストール"
+    },
+    "OpenWebUI": {
+      "display": "OpenWebUI ローカルチャットUI",
+      "description": "ローカルLLMチャットインターフェース（Ollama互換）",
+      "tag": "🔄 ミラーインストール"
+    },
+    "LobeChat": {
+      "display": "LobeChat",
+      "description": "マルチモデル対応のモダンなAIチャットプラットフォーム",
+      "tag": "🔄 ミラーインストール"
+    },
+    "NextChat": {
+      "display": "NextChat",
+      "description": "セルフホスト型ChatGPTウェブインターフェース",
+      "tag": "🔄 ミラーインストール"
+    },
+    "LangChain": {
+      "display": "LangChain LLMフレームワーク",
+      "description": "最も人気のあるLLMアプリケーションフレームワーク",
+      "tag": "✅ 直接入力"
+    },
+    "CrewAI": {
+      "display": "CrewAI",
+      "description": "マルチAIエージェントオーケストレーションフレームワーク",
+      "tag": "✅ 直接入力"
+    },
+    "AutoGen": {
+      "display": "AutoGen",
+      "description": "Microsoft製マルチエージェント会話フレームワーク",
+      "tag": "✅ 直接入力"
+    },
+    "AG2": {
+      "display": "AG2",
+      "description": "マルチエージェントフレームワーク（AutoGen fork）",
+      "tag": "✅ 直接入力"
+    },
+    "LlamaIndex": {
+      "display": "LlamaIndex",
+      "description": "LLMと外部データを連携するフレームワーク",
+      "tag": "✅ 直接入力"
+    },
+    "Haystack": {
+      "display": "Haystack",
+      "description": "エンタープライズ検索・RAGフレームワーク",
+      "tag": "✅ 直接入力"
+    },
+    "Phidata": {
+      "display": "Phidata",
+      "description": "マルチツール対応のAIエージェント構築フレームワーク",
+      "tag": "✅ 直接入力"
+    },
+    "OpenAIAgentsSDK": {
+      "display": "OpenAI エージェントSDK",
+      "description": "OpenAI公式AIエージェント開発SDK",
+      "tag": "✅ 直接入力"
+    },
+    "LangGraph": {
+      "display": "LangGraph",
+      "description": "LangChainのエージェントオーケストレーションフレームワーク",
+      "tag": "✅ 直接入力"
+    },
+    "MetaGPT": {
+      "display": "MetaGPT",
+      "description": "マルチロールAIソフトウェア開発フレームワーク",
+      "tag": "✅ 直接入力"
+    },
+    "Mastra": {
+      "display": "Mastra",
+      "description": "TypeScript製AIアプリケーションフレームワーク",
+      "tag": "✅ 直接入力"
+    },
+    "SemanticKernel": {
+      "display": "Semantic Kernel SDK",
+      "description": "Microsoft製AIオーケストレーションSDK（多言語対応）",
+      "tag": "✅ 直接入力"
+    },
+    "Gradio": {
+      "display": "Gradio",
+      "description": "MLアプリのプロトタイプを素早く構築するPythonライブラリ",
+      "tag": "✅ 直接入力"
+    },
+    "DSPy": {
+      "display": "DSPy",
+      "description": "プロンプトではなくプログラムでLLMを制御するフレームワーク",
+      "tag": "✅ 直接入力"
+    },
+    "ChromaDB": {
+      "display": "ChromaDB",
+      "description": "RAG向け軽量ベクターデータベース",
+      "tag": "✅ 直接入力"
+    },
+    "Mem0": {
+      "display": "Mem0",
+      "description": "永続的な会話メモリを実現するAIメモリレイヤー",
+      "tag": "✅ 直接入力"
+    },
+    "Qdrant": {
+      "display": "Qdrant",
+      "description": "高性能ベクター検索エンジン",
+      "tag": "✅ 直接入力"
+    },
+    "Weaviate": {
+      "display": "Weaviate",
+      "description": "ハイブリッド検索対応のクラウドネイティブベクターデータベース",
+      "tag": "✅ 直接入力"
+    },
+    "MilvusLite": {
+      "display": "MilvusLite",
+      "description": "組み込み可能な軽量Milvusベクターデータベース",
+      "tag": "✅ 直接入力"
+    },
+    "Unstructured": {
+      "display": "Unstructured",
+      "description": "非構造化ドキュメントパーサー（PDF/HTML/DOCX対応）",
+      "tag": "✅ 直接入力"
+    },
+    "NeMoGuardrails": {
+      "display": "NVIDIA NeMo Guardrails",
+      "description": "NVIDIAオープンソースAIセーフティツールキット",
+      "tag": "✅ 直接入力"
+    },
+    "Guardrails": {
+      "display": "AI Guardrails",
+      "description": "AI出力のガードレールと構造化バリデーション",
+      "tag": "✅ 直接入力"
+    },
+    "txtai": {
+      "display": "txtai",
+      "description": "AI駆動のセマンティック検索・データ抽出",
+      "tag": "✅ 直接入力"
+    },
+    "LanceDB": {
+      "display": "LanceDB",
+      "description": "Lanceカラム形式をベースにした組み込みベクターデータベース",
+      "tag": "✅ 直接入力"
+    },
+    "Docling": {
+      "display": "Docling",
+      "description": "IBMオープンソースのドキュメント理解・変換ツール",
+      "tag": "✅ 直接入力"
+    },
+    "ComfyUI": {
+      "display": "ComfyUI 画像生成UI",
+      "description": "ノードベースのStable DiffusionワークフローUI",
+      "mode_0_name": "Start",
+      "mode_0_desc": "ComfyUI を起動",
+      "mode_1_name": "低VRAMモードで起動 | Low VRAM",
+      "mode_1_desc": "低VRAMモードで起動",
+      "tag": "🔄 ミラーインストール"
+    },
+    "SDWebUI": {
+      "display": "Stable Diffusion WebUI",
+      "description": "最も人気のあるStable Diffusionウェブインターフェース",
+      "mode_0_name": "Start",
+      "mode_0_desc": "SD WebUI を起動",
+      "mode_1_name": "Share",
+      "mode_1_desc": "起動して公開リンクを生成",
+      "tag": "🔄 ミラーインストール"
+    },
+    "InvokeAI": {
+      "display": "InvokeAI",
+      "description": "プロフェッショナルAIアート生成プラットフォーム",
+      "tag": "🔄 ミラーインストール"
+    },
+    "Fooocus": {
+      "display": "Fooocus",
+      "description": "ミニマルなAI画像生成ツール、ワンクリックで高品質",
+      "tag": "✅ 直接入力"
+    },
+    "AnimateDiff": {
+      "display": "AnimateDiff",
+      "description": "Stable Diffusionベースのテキストから動画生成",
+      "tag": "✅ 直接入力"
+    },
+    "Wan2.1": {
+      "display": "Wan2.1",
+      "description": "Alibaba Wan動画生成モデル",
+      "tag": "✅ 直接入力"
+    },
+    "CogVideoX": {
+      "display": "CogVideoX",
+      "description": "Zhipu AIオープンソース動画生成モデル",
+      "tag": "✅ 直接入力"
+    },
+    "OpenSora": {
+      "display": "Open-Sora",
+      "description": "Soraライクなアーキテクチャのオープンソーステキスト生成動画",
+      "tag": "✅ 直接入力"
+    },
+    "HunyuanVideo": {
+      "display": "HunyuanVideo",
+      "description": "Tencent Hunyuan動画生成モデル",
+      "tag": "✅ 直接入力"
+    },
+    "StepVideo": {
+      "display": "StepVideo",
+      "description": "Stepfunオープンソース動画生成モデル",
+      "tag": "✅ 直接入力"
+    },
+    "Whisper": {
+      "display": "Whisper",
+      "description": "OpenAIオープンソース音声認識",
+      "tag": "✅ 直接入力"
+    },
+    "FunASR": {
+      "display": "FunASR",
+      "description": "Alibaba DAMO AcademyオープンソースASRツールキット",
+      "tag": "✅ 直接入力"
+    },
+    "CoquiTTS": {
+      "display": "Coqui TTS 音声合成",
+      "description": "オープンソースニューラル音声合成エンジン",
+      "tag": "✅ 直接入力"
+    },
+    "Bark": {
+      "display": "Suno Bark 音声合成",
+      "description": "Sunoオープンソース音声合成モデル",
+      "tag": "🔄 ミラーインストール"
+    },
+    "CosyVoice": {
+      "display": "CosyVoice",
+      "description": "Alibaba Tongyi音声クローン・合成モデル",
+      "tag": "✅ 直接入力"
+    },
+    "MusicGen": {
+      "display": "MusicGen",
+      "description": "MetaオープンソースAI音楽生成モデル",
+      "tag": "✅ 直接入力"
+    },
+    "RVC": {
+      "display": "RVC",
+      "description": "リアルタイム音声変換ツール",
+      "tag": "🔄 ミラーインストール"
+    },
+    "WhisperX": {
+      "display": "WhisperX",
+      "description": "高速化Whisper（話者ダイアライゼーション対応）",
+      "tag": "🔄 ミラーインストール"
+    },
+    "LangFlow": {
+      "display": "LangFlow",
+      "description": "ビジュアルLLMワークフロービルダープラットフォーム",
+      "mode_0_name": "Start",
+      "mode_0_desc": "LangFlow を起動",
+      "tag": "✅ 直接入力"
+    },
+    "Flowise": {
+      "display": "Flowise",
+      "description": "ローコードLLMワークフロービルダープラットフォーム",
+      "mode_0_name": "Start",
+      "mode_0_desc": "Flowise を起動",
+      "tag": "✅ 直接入力"
+    },
+    "ClawAegis": {
+      "display": "ClawAegis",
+      "description": "AIセーフティガード・コンテンツフィルター",
+      "tag": "✅ 直接入力"
+    },
+    "LlamaCppPython": {
+      "display": "LlamaCppPython",
+      "description": "C++ Llama推論ライブラリのPythonバインディング",
+      "tag": "✅ 直接入力"
+    },
+    "KimiCLI": {
+      "display": "Kimi",
+      "description": "Moonshot AI Kimi公式ターミナルCLI",
+      "tag": "✅ 直接入力"
+    },
+    "MiniMaxCLI": {
+      "display": "MiniMax",
+      "description": "MiniMax公式ターミナルCLIツール",
+      "tag": "✅ 直接入力"
+    },
+    "FrCli": {
+      "display": "FrCli",
+      "description": "Fanren AIターミナルCLIツール",
+      "tag": "✅ 直接入力"
+    },
+    "ZaiSDK": {
+      "display": "ZaiSDK",
+      "description": "Zhipu AI公式のPython SDK",
+      "tag": "✅ 直接入力"
+    },
+    "AskPy": {
+      "display": "Ask",
+      "description": "AIコマンドラインQ&Aツール",
+      "tag": "✅ 直接入力"
+    },
+    "BaichuanCLI": {
+      "display": "BaichuanCLI",
+      "description": "Baichuan Intelligence公式ターミナルCLI",
+      "tag": "✅ 直接入力"
+    },
+    "DeepSeekSDK": {
+      "display": "DeepSeek",
+      "description": "DeepSeek公式のPython SDK",
+      "tag": "✅ 直接入力"
+    },
+    "TongyiSDK": {
+      "display": "TongyiSDK",
+      "description": "Alibaba Tongyi Qwen公式のDashScope SDK",
+      "tag": "✅ 直接入力"
+    },
+    "CodeQL": {
+      "display": "GitHub",
+      "description": "GitHubコードセキュリティ分析エンジン",
+      "tag": "✅ 直接入力"
+    },
+    "Semgrep": {
+      "display": "Semgrep",
+      "description": "軽量静的コードセキュリティ分析",
+      "tag": "✅ 直接入力"
+    },
+    "Bearer": {
+      "display": "Bearer",
+      "description": "AIコードセキュリティ監査・プライバシー分析",
+      "tag": "✅ 直接入力"
+    },
+    "n8n": {
+      "display": "n8n",
+      "description": "オープンソースワークフロー自動化プラットフォーム",
+      "mode_0_name": "Start",
+      "mode_0_desc": "n8n を起動",
+      "tag": "✅ 直接入力"
+    },
+    "AutoGPT": {
+      "display": "AutoGPT",
+      "description": "タスクを自律的に完了するAIエージェント",
+      "tag": "✅ 直接入力"
+    },
+    "Airflow": {
+      "display": "Apache",
+      "description": "オープンソースワークフロースケジューリングプラットフォーム",
+      "tag": "✅ 直接入力"
+    },
+    "OpenHuman": {
+      "display": "OpenHuman",
+      "description": "オープンソースデスクトップAIエージェント（118以上の連携機能、メモリツリー）",
+      "mode_0_name": "Desktop",
+      "mode_0_desc": "デスクトップAIアシスタントを起動",
+      "tag": "✅ 直接入力"
+    },
+    "HermesAgent": {
+      "display": "Hermes",
+      "description": "自律型AIエージェント（永続メモリ、自動スキル生成）",
+      "mode_0_name": "Terminal",
+      "mode_0_desc": "Hermesエージェントを起動",
+      "tag": "🔄 ミラーインストール"
+    }
+  }
+}
